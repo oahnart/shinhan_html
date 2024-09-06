@@ -1,0 +1,22 @@
+@font-face {
+  font-family: NotoSansKR-Regular;
+  src: url("/assets/fonts/NotoSansKR-Regular.otf");
+}
+@font-face {
+  font-family: NotoSansKR-Medium;
+  src: url("/assets/fonts/NotoSansKR-Medium.otf");
+}
+@font-face {
+  font-family: NotoSansKR-Bold;
+  src: url("/assets/fonts/NotoSansKR-Bold.otf");
+}
+@font-face {
+  font-family: NotoSansKR-Light;
+  src: url("/assets/fonts/NotoSansKR-Light.otf");
+}
+
+body {
+  font-family: NotoSansKR-Regular;
+  height: 100%;
+  color: #101010;
+}
