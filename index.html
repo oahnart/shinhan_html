@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <!-- <link rel="stylesheet" href="/assets/css/base.css" /> -->
+    <link rel="stylesheet" href="/index.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            padding: {
+              xl: "16px",
+              DEFAULT: "24px",
+            },
+            screens: {
+              xl: "1403px",
+            },
+          },
+          extend: {
+            boxShadow: {
+              custom: "0px 15px 15px 0px rgba(0, 0, 0, 0.08)",
+              custom1: "0px 4px 4px 0px rgba(0, 0, 0, 0.05)",
+              custom2: "0px 4px 15px 0px rgba(0, 0, 0, 0.15)",
+              custom3: "0px 0px 8px 0px rgba(0, 0, 0, 0.08)",
+              custom4: "0px 4px 4px 0px rgba(0, 0, 0, 0.15)",
+              custom5: "0px 4px 8px 0px rgba(0, 0, 0, 0.08)",
+              custom6: "0px 0px 8px rgba(0, 0, 0, 0.20)",
+              custom7: "0px 5px 0px 0px #121212",
+            },
+          },
+          fontFamily: {
+            noto200: ["NotoSansKR-Thin"],
+            noto300: ["NotoSansKR-Light"],
+            noto400: ["NotoSansKR-Regular"],
+            noto500: ["NotoSansKR-Medium"],
+            noto700: ["NotoSansKR-Bold"],
+          },
+          screens: {
+            xxs: "360px",
+            xs: "475px",
+            sm: "640px",
+            md: "768px",
+            lg: "1024px",
+            xl: "1280px",
+            "2xl": "1400px",
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="overflow-x-hidden min-h-screen flex flex-col leading-none">
+      <div
+        class="bg-[#101010] flex items-center justify-center flex-col h-[90px]"
+      >
+        <div class="container flex justify-between">
+          <div class="cursor-pointer">
+            <img src="/assets/images/home/shinhan_logo.png" alt="logo" />
+          </div>
+          <div class="flex items-center gap-[45px]">
+            <div class="relative group">
+              <div
+                class="text-[#fff] cursor-pointer py-[9.5px] hover:border-b-[3px] hover:border-dotted hover:border-[#FEA31B]"
+              ></div>
+
+              <div
+                class="hidden group-hover:block absolute top-[100%] -translate-x-1/2 left-[50%]"
+              >
+                <div
+                  class="mt-[10px] bg-[#FFFFFF] rounded-[18px] px-[20px] py-[13px] min-w-[200px] shadow-[0_4px_15px_0px_rgba(0,0,0,0.15)]"
+                >
+                  <div
+                    class="cursor-pointer text-center text-[14px] py-[16px] hover:text-[#FEA31B] uppercase"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">banner info</div>
+      <div class="flex-1">outlet</div>
+      <div>footer</div>
+    </div>
+  </body>
+</html>
