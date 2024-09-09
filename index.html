@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/index.css" />
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index.js" type="module"></script>
     <script>
       tailwind.config = {
         theme: {
@@ -69,10 +70,24 @@
               <div
                 class="text-[#fff] cursor-pointer py-[9.5px] hover:border-b-[3px] hover:border-dotted hover:border-[#FEA31B]"
               >
+                협력업체
+              </div>
+            </div>
+            <div class="relative group">
+              <div
+                class="text-[#fff] cursor-pointer py-[9.5px] hover:border-b-[3px] hover:border-dotted hover:border-[#FEA31B]"
+              >
+                사업소개
+              </div>
+            </div>
+            <div class="relative group">
+              <div
+                class="text-[#fff] cursor-pointer py-[9.5px] hover:border-b-[3px] hover:border-dotted hover:border-[#FEA31B]"
+              >
                 기업정보
               </div>
               <div
-                class="hidden group-hover:block absolute top-[100%] -translate-x-1/2 left-[50%]"
+                class="hidden group-hover:block absolute top-[100%] -translate-x-1/2 left-[50%] z-10"
               >
                 <div
                   class="mt-[10px] bg-[#FFFFFF] rounded-[18px] px-[20px] py-[13px] min-w-[200px] shadow-[0_4px_15px_0px_rgba(0,0,0,0.15)]"
@@ -90,13 +105,2003 @@
                 </div>
               </div>
             </div>
+            <div class="relative group">
+              <div
+                class="text-[#fff] cursor-pointer py-[9.5px] hover:border-b-[3px] hover:border-dotted hover:border-[#FEA31B]"
+              >
+                지난시세조회
+              </div>
+              <div
+                class="hidden group-hover:block absolute top-[100%] -translate-x-1/2 left-[50%] z-10"
+              >
+                <div
+                  class="mt-[10px] bg-[#FFFFFF] rounded-[18px] px-[20px] py-[13px] min-w-[200px] shadow-[0_4px_15px_0px_rgba(0,0,0,0.15)]"
+                >
+                  <div
+                    class="cursor-pointer text-center text-[14px] py-[16px] hover:text-[#FEA31B] uppercase"
+                  >
+                    국내시세
+                  </div>
+                  <div
+                    class="cursor-pointer text-center text-[14px] py-[16px] hover:text-[#FEA31B] uppercase"
+                  >
+                    국제시세
+                  </div>
+                  <div
+                    class="cursor-pointer text-center text-[14px] py-[16px] hover:text-[#FEA31B] uppercase"
+                  >
+                    London Fix 시세
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="container font-noto700">banner info</div>
-      <div class="flex-1">outlet</div>
-      <div>footer</div>
+      <div class="container">
+        <div class="h-[61px] flex items-center justify-between">
+          <div class="flex justify-between">
+            <div class="text-[#FEA31B] flex leading-none">
+              <div class="font-noto500 pr-[25px]">
+                금은문의: <span class="font-noto700">02.743.8771</span>
+              </div>
+              <div
+                class="font-noto500 pr-[25px] pl-[25px] border-l border-r border-[#DEDBDB] border-solid"
+              >
+                대표전화: <span class="font-noto700">02.743.8778</span>
+              </div>
+              <div class="font-noto500 pl-[25px]">
+                기타금속: <span class="font-noto700">02.743.8755</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-[20px] text-[#666666] text-[15px]">
+            <div>월~금요일</div>
+            <div>오전 9시~ 오후 5시</div>
+            <div>(동부 표준시)</div>
+          </div>
+        </div>
+      </div>
+      <div class="flex-1">
+        <div class="relative">
+          <img src="assets/images/home/banner.png" alt="banner" />
+          <div class="absolute bottom-[-150px] left-0 right-0">
+            <div
+              class="bg-[#343434] max-w-[1200px] mx-auto rounded-t-[20px] py-[21px]"
+            >
+              <div
+                class="text-[#fff] font-noto500 text-[28px] text-center uppercase"
+              >
+                Best source for currency conversion, tracking exchange rates
+              </div>
+            </div>
+
+            <div
+              class="bg-[#fff] max-w-[1200px] mx-auto rounded-b-[20px] h-[150px] shadow-[1px_29px_20px_0px_#F8F8F8]"
+            >
+              <div class="flex gap-[33px] pt-[27px] pb-[43px] px-[50px]">
+                <div class="flex gap-[17px] flex-1 justify-between">
+                  <div>
+                    <div class="text-[#343434] text-[15px] mb-[6px]">
+                      Amount
+                    </div>
+                    <div
+                      class="border-[#EBEBEB] border border-solid h-[55px] px-[25px] rounded-[10px] shadow-[1px_10px_12px_0px_#F8F8F8] flex items-center gap-[11px] justify-between"
+                    >
+                      <div class="text-[20px] font-noto700">$</div>
+                      <input
+                        class="focus:outline-none text-[20px] font-noto700 w-full flex-1 placeholder:text-[#999999] placeholder:font-noto400 placeholder:text-[16px]"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="text-[#343434] text-[15px] mb-[6px]">From</div>
+                    <div
+                      class="border-[#EBEBEB] border border-solid h-[55px] px-[25px] rounded-[10px] shadow-[1px_10px_12px_0px_#F8F8F8] flex items-center gap-[11px] justify-between"
+                    >
+                      <img
+                        src="assets/images/home/american.png"
+                        alt="img"
+                        class="min-w-[45px]"
+                      />
+                      <input
+                        class="focus:outline-none text-[20px] font-noto700 w-full flex-1 placeholder:text-[#999999] placeholder:font-noto400 placeholder:text-[16px]"
+                        placeholder="USD - Us dollar"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center justify-center border border-[#EBEBEB] border-solid h-[55px] min-w-[46px] mt-auto rounded-[10px] cursor-pointer"
+                  >
+                    <img src="assets/images/home/arrow.png" alt="arrow" />
+                  </div>
+                  <div>
+                    <div class="text-[#343434] text-[15px] mb-[6px]">To</div>
+                    <div
+                      class="border-[#EBEBEB] border border-solid h-[55px] px-[25px] rounded-[10px] shadow-[1px_10px_12px_0px_#F8F8F8] flex items-center gap-[11px] justify-between"
+                    >
+                      <img
+                        src="assets/images/home/korean.png"
+                        alt="img"
+                        class="min-w-[45px] border border-solid border-[#EBEBEB]"
+                      />
+                      <input
+                        class="focus:outline-none text-[20px] font-noto700 w-full flex-1 placeholder:text-[#999999] placeholder:font-noto400 placeholder:text-[16px]"
+                        placeholder="USD - Us dollar"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="bg-[#FEA31B] text-center text-[#fff] rounded-[10px] w-[160px] h-[55px] leading-[55px] mt-auto cursor-pointer"
+                >
+                  CONVERT
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="flex gap-[29px] justify-between mt-[233px]">
+            <div class="flex-1">
+              <div class="text-center text-[25px] font-noto500">
+                오늘의 시세
+              </div>
+              <div
+                class="text-[#999999] font-noto500 pt-[10px] pb-[20px] text-center"
+              >
+                2024년 08월 14일(수) 17:02:26 (도매가,100%기준가)
+              </div>
+              <div
+                class="border border-solid border-[#EFEFEF] p-[30px] pb-[35px] rounded-[30px] shadow-[1px_29px_20px_0px_#F8F8F8] bg-[#fff]"
+              >
+                <table class="w-full">
+                  <colgroup>
+                    <col width="25%" />
+                    <col width="25%" />
+                    <col width="25%" />
+                    <col width="25%" />
+                  </colgroup>
+                  <thead>
+                    <tr
+                      class="text-center text-[#FEA31B] font-noto700 text-[14px]"
+                    >
+                      <th class="pb-[18px]">제품</th>
+                      <th class="pb-[18px]">(￦/g)</th>
+                      <th class="pb-[18px]">(￦/3.75g)</th>
+                      <th class="pb-[18px]">변동</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="bg-[#F4F4F4]">
+                      <td
+                        class="text-center font-noto700 text-[16px] py-[21px] rounded-[15px]"
+                        colspan="4"
+                      >
+                        <div class="flex mb-[16px]">
+                          <div class="w-[25%] font-noto400">금 도매가</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">
+                            <span class="text-[#EF2E2E]">▲</span>
+                            <span class="text-[#00B63E]">▼</span>
+                            0
+                          </div>
+                        </div>
+                        <div class="flex">
+                          <div class="w-[25%] font-noto400">100% 기준</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">
+                            <span class="text-[#EF2E2E]">▲</span>
+                            <span class="text-[#00B63E]">▼</span>
+                            0
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="h-[12px]"></tr>
+                    <tr class="bg-[#F4F4F4]">
+                      <td
+                        class="text-center font-noto700 text-[16px] py-[21px] rounded-[15px]"
+                        colspan="4"
+                      >
+                        <div class="flex mb-[16px]">
+                          <div class="w-[25%] font-noto400">은 도매가</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">
+                            <span class="text-[#EF2E2E]">▲</span>
+                            <span class="text-[#00B63E]">▼</span>
+                            0
+                          </div>
+                        </div>
+                        <div class="flex">
+                          <div class="w-[25%] font-noto400">100% 기준</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">
+                            <span class="text-[#EF2E2E]">▲</span>
+                            <span class="text-[#00B63E]">▼</span>
+                            0
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="h-[12px]"></tr>
+                    <tr class="bg-[#F4F4F4]">
+                      <td
+                        class="text-center font-noto700 text-[16px] py-[21px] rounded-[15px]"
+                        colspan="4"
+                      >
+                        <div class="flex mb-[16px]">
+                          <div class="w-[25%] font-noto400">백금 도매가</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">
+                            <span class="text-[#EF2E2E]">▲</span>
+                            <span class="text-[#00B63E]">▼</span>
+                            0
+                          </div>
+                        </div>
+                        <div class="flex">
+                          <div class="w-[25%] font-noto400">100% 기준</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">
+                            <span class="text-[#EF2E2E]">▲</span>
+                            <span class="text-[#00B63E]">▼</span>
+                            0
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="h-[12px]"></tr>
+                    <tr class="bg-[#F4F4F4]">
+                      <td
+                        class="text-center font-noto700 text-[16px] py-[21px] rounded-[15px]"
+                        colspan="4"
+                      >
+                        <div class="flex mb-[16px]">
+                          <div class="w-[25%] font-noto400">파라듐 도매</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">
+                            <span class="text-[#EF2E2E]">▲</span>
+                            <span class="text-[#00B63E]">▼</span>
+                            0
+                          </div>
+                        </div>
+                        <div class="flex">
+                          <div class="w-[25%] font-noto400">100% 기준</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">
+                            <span class="text-[#EF2E2E]">▲</span>
+                            <span class="text-[#00B63E]">▼</span>
+                            0
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="h-[12px]"></tr>
+                    <tr class="bg-[#F4F4F4]">
+                      <td
+                        class="text-center font-noto700 text-[16px] py-[21px] rounded-[15px]"
+                        colspan="4"
+                      >
+                        <div class="flex">
+                          <div class="w-[25%] font-noto400">청화금 도매</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">
+                            <div>0</div>
+                            <div class="font-noto400 mt-[16px]">(￦/100g)</div>
+                          </div>
+                          <div class="w-[25%]">
+                            <span class="text-[#EF2E2E]">▲</span>
+                            <span class="text-[#00B63E]">▼</span>
+                            0
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="flex-1">
+              <div class="text-center text-[25px] font-noto500">
+                국제시세 & 국제 환율
+              </div>
+              <div
+                class="text-[#999999] font-noto500 pt-[10px] pb-[20px] text-center"
+              >
+                신한메탈에서 제공하는 국제 시세 및 국제 환율입니다.
+              </div>
+
+              <div
+                class="border border-solid border-[#EFEFEF] p-[30px] pb-[35px] rounded-[30px] shadow-[1px_29px_20px_0px_#F8F8F8] bg-[#fff]"
+              >
+                <table class="w-full">
+                  <colgroup>
+                    <col width="25%" />
+                    <col width="25%" />
+                    <col width="25%" />
+                    <col width="25%" />
+                  </colgroup>
+                  <thead>
+                    <tr
+                      class="text-center text-[#FEA31B] font-noto700 text-[14px] uppercase"
+                    >
+                      <th class="pb-[18px]">Product</th>
+                      <th class="pb-[18px]">Ask</th>
+                      <th class="pb-[18px]">Bid</th>
+                      <th class="pb-[18px]">
+                        <span class="text-[#EF2E2E]">▲</span>
+                        <span class="text-[#00B63E]">▼</span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="bg-[#F4F4F4]">
+                      <td
+                        class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                        colspan="4"
+                      >
+                        <div class="flex uppercase">
+                          <div class="w-[25%] font-noto400">Silver</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">
+                            <span class="text-[#EF2E2E]">▲</span>
+                            <span class="text-[#00B63E]">▼</span>
+                            0
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="h-[10px]"></tr>
+                    <tr class="bg-[#F4F4F4]">
+                      <td
+                        class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                        colspan="4"
+                      >
+                        <div class="flex uppercase">
+                          <div class="w-[25%] font-noto400">Gold</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">
+                            <span class="text-[#EF2E2E]">▲</span>
+                            <span class="text-[#00B63E]">▼</span>
+                            0
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="h-[10px]"></tr>
+                    <tr class="bg-[#F4F4F4]">
+                      <td
+                        class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                        colspan="4"
+                      >
+                        <div class="flex uppercase">
+                          <div class="w-[25%] font-noto400">Platinum</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">
+                            <span class="text-[#EF2E2E]">▲</span>
+                            <span class="text-[#00B63E]">▼</span>
+                            0
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="h-[10px]"></tr>
+                    <tr class="bg-[#F4F4F4]">
+                      <td
+                        class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                        colspan="4"
+                      >
+                        <div class="flex uppercase">
+                          <div class="w-[25%] font-noto400">Palladium</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">
+                            <span class="text-[#EF2E2E]">▲</span>
+                            <span class="text-[#00B63E]">▼</span>
+                            0
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div
+                class="mt-[20px] border border-solid border-[#EFEFEF] p-[30px] pb-[35px] rounded-[30px] shadow-[1px_29px_20px_0px_#F8F8F8] bg-[#fff]"
+              >
+                <table class="w-full">
+                  <colgroup>
+                    <col width="25%" />
+                    <col width="25%" />
+                    <col width="25%" />
+                    <col width="25%" />
+                  </colgroup>
+                  <thead>
+                    <tr
+                      class="text-center text-[#FEA31B] font-noto700 text-[14px] uppercase"
+                    >
+                      <th class="pb-[18px]">통화</th>
+                      <th class="pb-[18px]">Ask</th>
+                      <th class="pb-[18px]">Bid</th>
+                      <th class="pb-[18px]">변동</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="bg-[#F4F4F4]">
+                      <td
+                        class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                        colspan="4"
+                      >
+                        <div class="flex uppercase">
+                          <div class="w-[25%] font-noto400">USD</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">
+                            <span class="text-[#EF2E2E]">▲</span>
+                            <span class="text-[#00B63E]">▼</span>
+                            0
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="h-[10px]"></tr>
+                    <tr class="bg-[#F4F4F4]">
+                      <td
+                        class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                        colspan="4"
+                      >
+                        <div class="flex uppercase">
+                          <div class="w-[25%] font-noto400">JPY</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">
+                            <span class="text-[#EF2E2E]">▲</span>
+                            <span class="text-[#00B63E]">▼</span>
+                            0
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="h-[10px]"></tr>
+                    <tr class="bg-[#F4F4F4]">
+                      <td
+                        class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                        colspan="4"
+                      >
+                        <div class="flex uppercase">
+                          <div class="w-[25%] font-noto400">EUR</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">
+                            <span class="text-[#EF2E2E]">▲</span>
+                            <span class="text-[#00B63E]">▼</span>
+                            0
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="h-[10px]"></tr>
+                    <tr class="bg-[#F4F4F4]">
+                      <td
+                        class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                        colspan="4"
+                      >
+                        <div class="flex uppercase">
+                          <div class="w-[25%] font-noto400">CNY</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">
+                            <span class="text-[#EF2E2E]">▲</span>
+                            <span class="text-[#00B63E]">▼</span>
+                            0
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-[109px]">
+            <div class="flex justify-center gap-[28px] items-center mb-[32px]">
+              <img src="assets/images/home/gold.png" alt="gold" />
+              <div class="text-[36px] font-noto500">국내 금 %별 기준가</div>
+            </div>
+            <div class="gap-x-[29px] gap-y-[20px] grid grid-cols-2">
+              <div
+                class="border border-solid border-[#EFEFEF] p-[30px] pb-[35px] rounded-[30px] shadow-[1px_29px_20px_0px_#F8F8F8] bg-[#fff]"
+              >
+                <table class="w-full">
+                  <colgroup>
+                    <col width="25%" />
+                    <col width="25%" />
+                    <col width="25%" />
+                    <col width="25%" />
+                  </colgroup>
+                  <thead>
+                    <tr
+                      class="text-center text-[#FEA31B] font-noto700 text-[14px] uppercase"
+                    >
+                      <th class="pb-[18px]">100.5%</th>
+                      <th class="pb-[18px]">100.6%</th>
+                      <th class="pb-[18px]">100.7%</th>
+                      <th class="pb-[18px]">100.8%</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="bg-[#F4F4F4]">
+                      <td
+                        class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                        colspan="4"
+                      >
+                        <div class="flex uppercase">
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="h-[10px]"></tr>
+                    <tr class="bg-[#F4F4F4]">
+                      <td
+                        class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                        colspan="4"
+                      >
+                        <div class="flex uppercase">
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div
+                class="border border-solid border-[#EFEFEF] p-[30px] pb-[35px] rounded-[30px] shadow-[1px_29px_20px_0px_#F8F8F8] bg-[#fff]"
+              >
+                <table class="w-full">
+                  <colgroup>
+                    <col width="25%" />
+                    <col width="25%" />
+                    <col width="25%" />
+                    <col width="25%" />
+                  </colgroup>
+                  <thead>
+                    <tr
+                      class="text-center text-[#FEA31B] font-noto700 text-[14px] uppercase"
+                    >
+                      <th class="pb-[18px]">100.9%</th>
+                      <th class="pb-[18px]">101%</th>
+                      <th class="pb-[18px]">101.1%</th>
+                      <th class="pb-[18px]">101.2%</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="bg-[#F4F4F4]">
+                      <td
+                        class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                        colspan="4"
+                      >
+                        <div class="flex uppercase">
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="h-[10px]"></tr>
+                    <tr class="bg-[#F4F4F4]">
+                      <td
+                        class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                        colspan="4"
+                      >
+                        <div class="flex uppercase">
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div
+                class="border border-solid border-[#EFEFEF] p-[30px] pb-[35px] rounded-[30px] shadow-[1px_29px_20px_0px_#F8F8F8] bg-[#fff]"
+              >
+                <table class="w-full">
+                  <colgroup>
+                    <col width="25%" />
+                    <col width="25%" />
+                    <col width="25%" />
+                    <col width="25%" />
+                  </colgroup>
+                  <thead>
+                    <tr
+                      class="text-center text-[#FEA31B] font-noto700 text-[14px] uppercase"
+                    >
+                      <th class="pb-[18px]">101.3%</th>
+                      <th class="pb-[18px]">101.4%</th>
+                      <th class="pb-[18px]">101.5%</th>
+                      <th class="pb-[18px]">101.6%</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="bg-[#F4F4F4]">
+                      <td
+                        class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                        colspan="4"
+                      >
+                        <div class="flex uppercase">
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="h-[10px]"></tr>
+                    <tr class="bg-[#F4F4F4]">
+                      <td
+                        class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                        colspan="4"
+                      >
+                        <div class="flex uppercase">
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div
+                class="border border-solid border-[#EFEFEF] p-[30px] pb-[35px] rounded-[30px] shadow-[1px_29px_20px_0px_#F8F8F8] bg-[#fff]"
+              >
+                <table class="w-full">
+                  <colgroup>
+                    <col width="25%" />
+                    <col width="25%" />
+                    <col width="25%" />
+                    <col width="25%" />
+                  </colgroup>
+                  <thead>
+                    <tr
+                      class="text-center text-[#FEA31B] font-noto700 text-[14px] uppercase"
+                    >
+                      <th class="pb-[18px]">101.7%</th>
+                      <th class="pb-[18px]">101.8%</th>
+                      <th class="pb-[18px]">101.9%</th>
+                      <th class="pb-[18px]">102%</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="bg-[#F4F4F4]">
+                      <td
+                        class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                        colspan="4"
+                      >
+                        <div class="flex uppercase">
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="h-[10px]"></tr>
+                    <tr class="bg-[#F4F4F4]">
+                      <td
+                        class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                        colspan="4"
+                      >
+                        <div class="flex uppercase">
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-[101px]">
+            <div class="flex justify-center gap-[28px] items-center mb-[32px]">
+              <img src="assets/images/home/silver.png" alt="gold" />
+              <div class="text-[36px] font-noto500">국내 은 %별 기준가</div>
+            </div>
+            <div class="gap-x-[29px] gap-y-[20px] grid grid-cols-2">
+              <div
+                class="border border-solid border-[#EFEFEF] p-[30px] pb-[35px] rounded-[30px] shadow-[1px_29px_20px_0px_#F8F8F8] bg-[#fff]"
+              >
+                <table class="w-full">
+                  <colgroup>
+                    <col width="25%" />
+                    <col width="25%" />
+                    <col width="25%" />
+                    <col width="25%" />
+                  </colgroup>
+                  <thead>
+                    <tr
+                      class="text-center text-[#1BBEF9] font-noto700 text-[14px] uppercase"
+                    >
+                      <th class="pb-[18px]">100.4%</th>
+                      <th class="pb-[18px]">100.8%</th>
+                      <th class="pb-[18px]">100.9%</th>
+                      <th class="pb-[18px]">101%</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="bg-[#F4F4F4]">
+                      <td
+                        class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                        colspan="4"
+                      >
+                        <div class="flex uppercase">
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="h-[10px]"></tr>
+                    <tr class="bg-[#F4F4F4]">
+                      <td
+                        class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                        colspan="4"
+                      >
+                        <div class="flex uppercase">
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div
+                class="border border-solid border-[#EFEFEF] p-[30px] pb-[35px] rounded-[30px] shadow-[1px_29px_20px_0px_#F8F8F8] bg-[#fff]"
+              >
+                <table class="w-full">
+                  <colgroup>
+                    <col width="25%" />
+                    <col width="25%" />
+                    <col width="25%" />
+                    <col width="25%" />
+                  </colgroup>
+                  <thead>
+                    <tr
+                      class="text-center text-[#1BBEF9] font-noto700 text-[14px] uppercase"
+                    >
+                      <th class="pb-[18px]">101.1%</th>
+                      <th class="pb-[18px]">101.2%</th>
+                      <th class="pb-[18px]">101.3%</th>
+                      <th class="pb-[18px]">101.4%</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="bg-[#F4F4F4]">
+                      <td
+                        class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                        colspan="4"
+                      >
+                        <div class="flex uppercase">
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="h-[10px]"></tr>
+                    <tr class="bg-[#F4F4F4]">
+                      <td
+                        class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                        colspan="4"
+                      >
+                        <div class="flex uppercase">
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div
+                class="border border-solid border-[#EFEFEF] p-[30px] pb-[35px] rounded-[30px] shadow-[1px_29px_20px_0px_#F8F8F8] bg-[#fff]"
+              >
+                <table class="w-full">
+                  <colgroup>
+                    <col width="25%" />
+                    <col width="25%" />
+                    <col width="25%" />
+                    <col width="25%" />
+                  </colgroup>
+                  <thead>
+                    <tr
+                      class="text-center text-[#1BBEF9] font-noto700 text-[14px] uppercase"
+                    >
+                      <th class="pb-[18px]">101.5%</th>
+                      <th class="pb-[18px]">101.8%</th>
+                      <th class="pb-[18px]">102%</th>
+                      <th class="pb-[18px]">102.5%</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="bg-[#F4F4F4]">
+                      <td
+                        class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                        colspan="4"
+                      >
+                        <div class="flex uppercase">
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="h-[10px]"></tr>
+                    <tr class="bg-[#F4F4F4]">
+                      <td
+                        class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                        colspan="4"
+                      >
+                        <div class="flex uppercase">
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div
+                class="border border-solid border-[#EFEFEF] p-[30px] pb-[35px] rounded-[30px] shadow-[1px_29px_20px_0px_#F8F8F8] bg-[#fff]"
+              >
+                <table class="w-full">
+                  <colgroup>
+                    <col width="25%" />
+                    <col width="25%" />
+                    <col width="25%" />
+                    <col width="25%" />
+                  </colgroup>
+                  <thead>
+                    <tr
+                      class="text-center text-[#1BBEF9] font-noto700 text-[14px] uppercase"
+                    >
+                      <th class="pb-[18px]">103%</th>
+                      <th class="pb-[18px]">103.5%</th>
+                      <th class="pb-[18px]">104%</th>
+                      <th class="pb-[18px]">105%</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="bg-[#F4F4F4]">
+                      <td
+                        class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                        colspan="4"
+                      >
+                        <div class="flex uppercase">
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="h-[10px]"></tr>
+                    <tr class="bg-[#F4F4F4]">
+                      <td
+                        class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                        colspan="4"
+                      >
+                        <div class="flex uppercase">
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                          <div class="w-[25%]">0</div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- major stock markets -->
+      <div class="mt-[111px]">
+        <div class="relative">
+          <img
+            src="assets/images/home/major_stock.png"
+            alt="img"
+            class="absolute inset-0 z-[-1]"
+          />
+
+          <div class="container">
+            <div
+              class="pt-[94px] pb-[45px] text-[#fff] font-noto700 text-[48px] text-center"
+            >
+              주요증시 및 국제유가
+            </div>
+
+            <div class="flex gap-[29px]">
+              <div class="flex-1">
+                <div
+                  class="border border-solid border-[#EFEFEF] p-[30px] pb-[35px] rounded-[30px] shadow-[1px_29px_20px_0px_#F8F8F8] bg-[#fff]"
+                >
+                  <table class="w-full">
+                    <colgroup>
+                      <col width="33.3333%" />
+                      <col width="33.3333%" />
+                      <col width="33.3333%" />
+                    </colgroup>
+                    <thead>
+                      <tr
+                        class="text-center text-[#FEA31B] font-noto700 text-[14px] uppercase"
+                      >
+                        <th class="pb-[18px]">구분</th>
+                        <th class="pb-[18px]">금액</th>
+                        <th class="pb-[18px]">변동</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="bg-[#F4F4F4]">
+                        <td
+                          class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                          colspan="3"
+                        >
+                          <div class="flex uppercase">
+                            <div class="w-[33.3333%] font-noto400">코스피</div>
+                            <div class="w-[33.3333%]">0</div>
+                            <div class="w-[33.3333%]">
+                              <span class="text-[#EF2E2E]">▲</span>
+                              <span class="text-[#00B63E]">▼</span>
+                              <span class="min-w-[40px] inline-block pl-[10px]"
+                                >0</span
+                              >
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="h-[5px]"></tr>
+                      <tr class="bg-[#F4F4F4]">
+                        <td
+                          class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                          colspan="3"
+                        >
+                          <div class="flex uppercase">
+                            <div class="w-[33.3333%] font-noto400">
+                              코스피 200
+                            </div>
+                            <div class="w-[33.3333%]">0</div>
+                            <div class="w-[33.3333%]">
+                              <span class="text-[#EF2E2E]">▲</span>
+                              <span class="text-[#00B63E]">▼</span>
+                              <span class="min-w-[40px] inline-block pl-[10px]"
+                                >0</span
+                              >
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="h-[5px]"></tr>
+                      <tr class="bg-[#F4F4F4]">
+                        <td
+                          class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                          colspan="3"
+                        >
+                          <div class="flex uppercase">
+                            <div class="w-[33.3333%] font-noto400">
+                              코스피 선물
+                            </div>
+                            <div class="w-[33.3333%]">0</div>
+                            <div class="w-[33.3333%]">
+                              <span class="text-[#EF2E2E]">▲</span>
+                              <span class="text-[#00B63E]">▼</span>
+                              <span class="min-w-[40px] inline-block pl-[10px]"
+                                >0</span
+                              >
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="h-[5px]"></tr>
+                      <tr class="bg-[#F4F4F4]">
+                        <td
+                          class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                          colspan="3"
+                        >
+                          <div class="flex uppercase">
+                            <div class="w-[33.3333%] font-noto400">
+                              다우 존스
+                            </div>
+                            <div class="w-[33.3333%]">0</div>
+                            <div class="w-[33.3333%]">
+                              <span class="text-[#EF2E2E]">▲</span>
+                              <span class="text-[#00B63E]">▼</span>
+                              <span class="min-w-[40px] inline-block pl-[10px]"
+                                >0</span
+                              >
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="h-[5px]"></tr>
+                      <tr class="bg-[#F4F4F4]">
+                        <td
+                          class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                          colspan="3"
+                        >
+                          <div class="flex uppercase">
+                            <div class="w-[33.3333%] font-noto400">나스닥</div>
+                            <div class="w-[33.3333%]">0</div>
+                            <div class="w-[33.3333%]">
+                              <span class="text-[#EF2E2E]">▲</span>
+                              <span class="text-[#00B63E]">▼</span>
+                              <span class="min-w-[40px] inline-block pl-[10px]"
+                                >0</span
+                              >
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="h-[5px]"></tr>
+                      <tr class="bg-[#F4F4F4]">
+                        <td
+                          class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                          colspan="3"
+                        >
+                          <div class="flex uppercase">
+                            <div class="w-[33.3333%] font-noto400">S&P 500</div>
+                            <div class="w-[33.3333%]">0</div>
+                            <div class="w-[33.3333%]">
+                              <span class="text-[#EF2E2E]">▲</span>
+                              <span class="text-[#00B63E]">▼</span>
+                              <span class="min-w-[40px] inline-block pl-[10px]"
+                                >0</span
+                              >
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="h-[5px]"></tr>
+                      <tr class="bg-[#F4F4F4]">
+                        <td
+                          class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                          colspan="3"
+                        >
+                          <div class="flex uppercase">
+                            <div class="w-[33.3333%] font-noto400">
+                              영국 FTSE
+                            </div>
+                            <div class="w-[33.3333%]">0</div>
+                            <div class="w-[33.3333%]">
+                              <span class="text-[#EF2E2E]">▲</span>
+                              <span class="text-[#00B63E]">▼</span>
+                              <span class="min-w-[40px] inline-block pl-[10px]"
+                                >0</span
+                              >
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="h-[5px]"></tr>
+                      <tr class="bg-[#F4F4F4]">
+                        <td
+                          class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                          colspan="3"
+                        >
+                          <div class="flex uppercase">
+                            <div class="w-[33.3333%] font-noto400">
+                              독일 DAX
+                            </div>
+                            <div class="w-[33.3333%]">0</div>
+                            <div class="w-[33.3333%]">
+                              <span class="text-[#EF2E2E]">▲</span>
+                              <span class="text-[#00B63E]">▼</span>
+                              <span class="min-w-[40px] inline-block pl-[10px]"
+                                >0</span
+                              >
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="flex-1">
+                <div
+                  class="border border-solid border-[#EFEFEF] p-[30px] pb-[35px] rounded-[30px] shadow-[1px_29px_20px_0px_#F8F8F8] bg-[#fff]"
+                >
+                  <table class="w-full">
+                    <colgroup>
+                      <col width="33.3333%" />
+                      <col width="33.3333%" />
+                      <col width="33.3333%" />
+                    </colgroup>
+                    <thead>
+                      <tr
+                        class="text-center text-[#FEA31B] font-noto700 text-[14px] uppercase"
+                      >
+                        <th class="pb-[18px]">구분</th>
+                        <th class="pb-[18px]">금액</th>
+                        <th class="pb-[18px]">변동</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="bg-[#F4F4F4]">
+                        <td
+                          class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                          colspan="3"
+                        >
+                          <div class="flex uppercase">
+                            <div class="w-[33.3333%] font-noto400">
+                              프랑스 CAC
+                            </div>
+                            <div class="w-[33.3333%]">0</div>
+                            <div class="w-[33.3333%]">
+                              <span class="text-[#EF2E2E]">▲</span>
+                              <span class="text-[#00B63E]">▼</span>
+                              <span class="min-w-[40px] inline-block pl-[10px]"
+                                >0</span
+                              >
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="h-[5px]"></tr>
+                      <tr class="bg-[#F4F4F4]">
+                        <td
+                          class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                          colspan="3"
+                        >
+                          <div class="flex uppercase">
+                            <div class="w-[33.3333%] font-noto400">
+                              닛케이225
+                            </div>
+                            <div class="w-[33.3333%]">0</div>
+                            <div class="w-[33.3333%]">
+                              <span class="text-[#EF2E2E]">▲</span>
+                              <span class="text-[#00B63E]">▼</span>
+                              <span class="min-w-[40px] inline-block pl-[10px]"
+                                >0</span
+                              >
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="h-[5px]"></tr>
+                      <tr class="bg-[#F4F4F4]">
+                        <td
+                          class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                          colspan="3"
+                        >
+                          <div class="flex uppercase">
+                            <div class="w-[33.3333%] font-noto400">항셍</div>
+                            <div class="w-[33.3333%]">0</div>
+                            <div class="w-[33.3333%]">
+                              <span class="text-[#EF2E2E]">▲</span>
+                              <span class="text-[#00B63E]">▼</span>
+                              <span class="min-w-[40px] inline-block pl-[10px]"
+                                >0</span
+                              >
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="h-[5px]"></tr>
+                      <tr class="bg-[#F4F4F4]">
+                        <td
+                          class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                          colspan="3"
+                        >
+                          <div class="flex uppercase">
+                            <div class="w-[33.3333%] font-noto400">
+                              상하이종합지수
+                            </div>
+                            <div class="w-[33.3333%]">0</div>
+                            <div class="w-[33.3333%]">
+                              <span class="text-[#EF2E2E]">▲</span>
+                              <span class="text-[#00B63E]">▼</span>
+                              <span class="min-w-[40px] inline-block pl-[10px]"
+                                >0</span
+                              >
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="h-[5px]"></tr>
+                      <tr class="bg-[#F4F4F4]">
+                        <td
+                          class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                          colspan="3"
+                        >
+                          <div class="flex uppercase">
+                            <div class="w-[33.3333%] font-noto400">
+                              WTI유 선물
+                            </div>
+                            <div class="w-[33.3333%]">0</div>
+                            <div class="w-[33.3333%]">
+                              <span class="text-[#EF2E2E]">▲</span>
+                              <span class="text-[#00B63E]">▼</span>
+                              <span class="min-w-[40px] inline-block pl-[10px]"
+                                >0</span
+                              >
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="h-[5px]"></tr>
+                      <tr class="bg-[#F4F4F4]">
+                        <td
+                          class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                          colspan="3"
+                        >
+                          <div class="flex uppercase">
+                            <div class="w-[33.3333%] font-noto400">
+                              WTI유 현물
+                            </div>
+                            <div class="w-[33.3333%]">0</div>
+                            <div class="w-[33.3333%]">
+                              <span class="text-[#EF2E2E]">▲</span>
+                              <span class="text-[#00B63E]">▼</span>
+                              <span class="min-w-[40px] inline-block pl-[10px]"
+                                >0</span
+                              >
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="h-[5px]"></tr>
+                      <tr class="bg-[#F4F4F4]">
+                        <td
+                          class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                          colspan="3"
+                        >
+                          <div class="flex uppercase">
+                            <div class="w-[33.3333%] font-noto400">
+                              두바이스왑
+                            </div>
+                            <div class="w-[33.3333%]">0</div>
+                            <div class="w-[33.3333%]">
+                              <span class="text-[#EF2E2E]">▲</span>
+                              <span class="text-[#00B63E]">▼</span>
+                              <span class="min-w-[40px] inline-block pl-[10px]"
+                                >0</span
+                              >
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="h-[5px]"></tr>
+                      <tr class="bg-[#F4F4F4]">
+                        <td
+                          class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                          colspan="3"
+                        >
+                          <div class="flex uppercase">
+                            <div class="w-[33.3333%] font-noto400">
+                              두바이유
+                            </div>
+                            <div class="w-[33.3333%]">0</div>
+                            <div class="w-[33.3333%]">
+                              <span class="text-[#EF2E2E]">▲</span>
+                              <span class="text-[#00B63E]">▼</span>
+                              <span class="min-w-[40px] inline-block pl-[10px]"
+                                >0</span
+                              >
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- chart -->
+        <div class="mt-[84px]">
+          <div class="flex gap-[29px]">
+            <div class="flex-1">
+              <div class="text-center text-[25px] font-noto500 pb-[17px]">
+                국제 실시간 상품 차트
+              </div>
+              <div
+                class="rounded-[30px] border border-solid border-[#EFEFEF] shadow-[1px_29px_20px_0px_#F8F8F8] bg-[#fff] py-[22px] px-[27px]"
+              >
+                <div class="flex gap-[10px] tabs">
+                  <div
+                    class="tab-button active rounded-[10px] h-[40px] flex items-center justify-center px-[15px] font-noto700 text-[14px] cursor-pointer uppercase"
+                    data-tab="tab1"
+                  >
+                    금
+                  </div>
+                  <div
+                    class="tab-button rounded-[10px] h-[40px] flex items-center justify-center px-[15px] font-noto700 text-[14px] cursor-pointer uppercase"
+                    data-tab="tab2"
+                  >
+                    은
+                  </div>
+                  <div
+                    class="tab-button rounded-[10px] h-[40px] flex items-center justify-center px-[15px] font-noto700 text-[14px] cursor-pointer uppercase"
+                    data-tab="tab3"
+                  >
+                    백금
+                  </div>
+                  <div
+                    class="tab-button rounded-[10px] h-[40px] flex items-center justify-center px-[15px] font-noto700 text-[14px] cursor-pointer uppercase"
+                    data-tab="tab4"
+                  >
+                    팔라듐
+                  </div>
+                </div>
+
+                <div class="pt-[15px] pb-[25px]">
+                  <div class="tab-content active" id="tab1">
+                    <p>Nội dung của chart 1</p>
+                  </div>
+                  <div class="tab-content" id="tab2">
+                    <p>Nội dung của chart 2</p>
+                  </div>
+                  <div class="tab-content" id="tab3">
+                    <p>Nội dung của chart 3</p>
+                  </div>
+                  <div class="tab-content" id="tab4">
+                    <p>Nội dung của chart 4</p>
+                  </div>
+                </div>
+                <div class="px-[30px] flex gap-[250px]">
+                  <div class="text-[13px] text-[#656565]">11:27:37</div>
+                  <div class="flex gap-[5px]">
+                    <div class="flex items-center gap-[4px]">
+                      <input
+                        type="radio"
+                        id="html"
+                        name="fav_language"
+                        value="HTML"
+                        checked
+                      />
+                      <label for="html" class="text-[13px] text-[#656565]"
+                        >USD/T.oz</label
+                      >
+                    </div>
+                    <div class="flex items-center gap-[4px]">
+                      <input
+                        type="radio"
+                        id="css"
+                        name="fav_language"
+                        value="CSS"
+                      />
+                      <label for="css" class="text-[13px] text-[#656565]"
+                        >￦/g</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-1">
+              <div class="text-center text-[25px] font-noto500 pb-[17px]">
+                국제 실시간 환율 차트
+              </div>
+              <div
+                class="rounded-[30px] border border-solid border-[#EFEFEF] shadow-[1px_29px_20px_0px_#F8F8F8] bg-[#fff] py-[22px] px-[27px]"
+              >
+                <div class="flex gap-[10px] tabs-2">
+                  <div
+                    class="tab-button-2 active-2 rounded-[10px] h-[40px] flex items-center justify-center px-[15px] font-noto700 text-[14px] cursor-pointer uppercase"
+                    data-tab="tab5"
+                  >
+                    usd
+                  </div>
+                  <div
+                    class="tab-button-2 rounded-[10px] h-[40px] flex items-center justify-center px-[15px] font-noto700 text-[14px] cursor-pointer uppercase"
+                    data-tab="tab6"
+                  >
+                    jpy
+                  </div>
+                  <div
+                    class="tab-button-2 rounded-[10px] h-[40px] flex items-center justify-center px-[15px] font-noto700 text-[14px] cursor-pointer uppercase"
+                    data-tab="tab7"
+                  >
+                    eur
+                  </div>
+                  <div
+                    class="tab-button-2 rounded-[10px] h-[40px] flex items-center justify-center px-[15px] font-noto700 text-[14px] cursor-pointer uppercase"
+                    data-tab="tab8"
+                  >
+                    cny
+                  </div>
+                  <div
+                    class="tab-button-2 rounded-[10px] h-[40px] flex items-center justify-center px-[15px] font-noto700 text-[14px] cursor-pointer uppercase"
+                    data-tab="tab9"
+                  >
+                    달러인덱스
+                  </div>
+                </div>
+
+                <div class="pt-[15px] pb-[25px]">
+                  <div class="tab-content-2 active-2" id="tab5">
+                    <p>Nội dung của chart 1</p>
+                  </div>
+                  <div class="tab-content-2" id="tab6">
+                    <p>Nội dung của chart 2</p>
+                  </div>
+                  <div class="tab-content-2" id="tab7">
+                    <p>Nội dung của chart 3</p>
+                  </div>
+                  <div class="tab-content-2" id="tab8">
+                    <p>Nội dung của chart 4</p>
+                  </div>
+                  <div class="tab-content-2" id="tab9">
+                    <p>Nội dung của chart 5</p>
+                  </div>
+                </div>
+                <div class="px-[30px] flex gap-[250px]">
+                  <div class="text-[13px] text-[#656565]">11:27:37</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-[131px] flex gap-[28px]">
+          <div class="flex-1">
+            <div class="font-noto500 text-[25px] pb-[16px] text-center">
+              London Fix
+            </div>
+            <div
+              class="border border-solid border-[#EFEFEF] p-[30px] pb-[35px] rounded-[30px] shadow-[1px_29px_20px_0px_#F8F8F8] bg-[#fff]"
+            >
+              <table class="w-full">
+                <colgroup>
+                  <col width="33.33%" />
+                  <col width="33.33%" />
+                  <col width="33.33%" />
+                </colgroup>
+                <thead>
+                  <tr
+                    class="text-center text-[#FEA31B] font-noto700 text-[14px] uppercase"
+                  >
+                    <th class="pb-[18px]">구분</th>
+                    <th class="pb-[18px]">AM</th>
+                    <th class="pb-[18px]">PM</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="bg-[#F4F4F4]">
+                    <td
+                      class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                      colspan="4"
+                    >
+                      <div class="flex uppercase">
+                        <div class="w-[33.33%] font-noto400">Gold</div>
+                        <div class="w-[33.33%]">0</div>
+                        <div class="w-[33.33%]">0</div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="h-[5px]"></tr>
+                  <tr class="bg-[#F4F4F4]">
+                    <td
+                      class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                      colspan="4"
+                    >
+                      <div class="flex uppercase">
+                        <div class="w-[33.33%] font-noto400">Silver</div>
+                        <div class="w-[66.66%]">0</div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="h-[5px]"></tr>
+                  <tr class="bg-[#F4F4F4]">
+                    <td
+                      class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                      colspan="4"
+                    >
+                      <div class="flex uppercase">
+                        <div class="w-[33.33%] font-noto400">PT</div>
+                        <div class="w-[33.33%]">0</div>
+                        <div class="w-[33.33%]">0</div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="h-[5px]"></tr>
+                  <tr class="bg-[#F4F4F4]">
+                    <td
+                      class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                      colspan="4"
+                    >
+                      <div class="flex uppercase">
+                        <div class="w-[33.33%] font-noto400">PD</div>
+                        <div class="w-[33.33%]">0</div>
+                        <div class="w-[33.33%]">0</div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="font-noto500 text-[25px] pb-[16px] text-center">
+              기타 귀금속 시세
+            </div>
+            <div
+              class="border border-solid border-[#EFEFEF] p-[30px] pb-[35px] rounded-[30px] shadow-[1px_29px_20px_0px_#F8F8F8] bg-[#fff]"
+            >
+              <table class="w-full">
+                <colgroup>
+                  <col width="25%" />
+                  <col width="25%" />
+                  <col width="25%" />
+                  <col width="25%" />
+                </colgroup>
+                <thead>
+                  <tr
+                    class="text-center text-[#FEA31B] font-noto700 text-[14px] uppercase"
+                  >
+                    <th class="pb-[18px]">구분</th>
+                    <th class="pb-[18px]">기준가(원/g)</th>
+                    <th class="pb-[18px]">단위</th>
+                    <th class="pb-[18px]">변동</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="bg-[#F4F4F4]">
+                    <td
+                      class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                      colspan="4"
+                    >
+                      <div class="flex uppercase">
+                        <div class="w-[25%] font-noto400">구리</div>
+                        <div class="w-[25%]">0</div>
+                        <div class="w-[25%]">(usd/lbs)</div>
+                        <div class="w-[25%]">
+                          <span class="text-[#EF2E2E]">▲</span>
+                          <span class="text-[#00B63E]">▼</span>
+                          <span class="text-[#999]">=</span>
+                          0
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="h-[5px]"></tr>
+                  <tr class="bg-[#F4F4F4]">
+                    <td
+                      class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                      colspan="4"
+                    >
+                      <div class="flex uppercase">
+                        <div class="w-[25%] font-noto400">로듐</div>
+                        <div class="w-[25%]">0</div>
+                        <div class="w-[25%]">(usd/oz)</div>
+                        <div class="w-[25%]">
+                          <span class="text-[#EF2E2E]">▲</span>
+                          <span class="text-[#00B63E]">▼</span>
+                          <span class="text-[#999]">=</span>
+                          0
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="h-[5px]"></tr>
+                  <tr class="bg-[#F4F4F4]">
+                    <td
+                      class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                      colspan="4"
+                    >
+                      <div class="flex uppercase">
+                        <div class="w-[25%] font-noto400">인듐</div>
+                        <div class="w-[25%]">0</div>
+                        <div class="w-[25%]">(usd/kg)</div>
+                        <div class="w-[25%]">
+                          <span class="text-[#EF2E2E]">▲</span>
+                          <span class="text-[#00B63E]">▼</span>
+                          <span class="text-[#999]">=</span>
+                          0
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="h-[5px]"></tr>
+                  <tr class="bg-[#F4F4F4]">
+                    <td
+                      class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                      colspan="4"
+                    >
+                      <div class="flex uppercase">
+                        <div class="w-[25%] font-noto400">이리듐</div>
+                        <div class="w-[25%]">0</div>
+                        <div class="w-[25%]">(usd/oz)</div>
+                        <div class="w-[25%]">
+                          <span class="text-[#EF2E2E]">▲</span>
+                          <span class="text-[#00B63E]">▼</span>
+                          <span class="text-[#999]">=</span>
+                          0
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-[131px] mb-[77px] flex gap-[28px]">
+          <div class="flex-1">
+            <div class="font-noto500 text-[25px] pb-[16px] text-center">
+              사업자매입 시세
+            </div>
+            <div
+              class="border border-solid border-[#EFEFEF] p-[30px] pb-[35px] rounded-[30px] shadow-[1px_29px_20px_0px_#F8F8F8] bg-[#fff]"
+            >
+              <table class="w-full">
+                <colgroup>
+                  <col width="25%" />
+                  <col width="25%" />
+                  <col width="25%" />
+                  <col width="25%" />
+                </colgroup>
+                <thead>
+                  <tr
+                    class="text-center text-[#FEA31B] font-noto700 text-[14px] uppercase"
+                  >
+                    <th class="pb-[18px]">제품</th>
+                    <th class="pb-[18px]">살때(vat포함)</th>
+                    <th class="pb-[18px]">팔때</th>
+                    <th class="pb-[18px]">변동</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="bg-[#F4F4F4]">
+                    <td
+                      class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                      colspan="4"
+                    >
+                      <div class="flex uppercase">
+                        <div class="w-[25%] font-noto400">순금</div>
+                        <div class="w-[25%]">0</div>
+                        <div class="w-[25%]">0</div>
+                        <div class="w-[25%]">
+                          <span class="text-[#EF2E2E]">▲</span>
+                          <span class="text-[#00B63E]">▼</span>
+                          <span class="text-[#999]">=</span>
+                          0
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="h-[5px]"></tr>
+                  <tr class="bg-[#F4F4F4]">
+                    <td
+                      class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                      colspan="4"
+                    >
+                      <div class="flex uppercase">
+                        <div class="w-[25%] font-noto400">18K</div>
+                        <div class="w-[25%]">0</div>
+                        <div class="w-[25%]">0</div>
+                        <div class="w-[25%]">
+                          <span class="text-[#EF2E2E]">▲</span>
+                          <span class="text-[#00B63E]">▼</span>
+                          <span class="text-[#999]">=</span>
+                          0
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="h-[5px]"></tr>
+                  <tr class="bg-[#F4F4F4]">
+                    <td
+                      class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                      colspan="4"
+                    >
+                      <div class="flex uppercase">
+                        <div class="w-[25%] font-noto400">14K</div>
+                        <div class="w-[25%]">0</div>
+                        <div class="w-[25%]">0</div>
+                        <div class="w-[25%]">
+                          <span class="text-[#EF2E2E]">▲</span>
+                          <span class="text-[#00B63E]">▼</span>
+                          <span class="text-[#999]">=</span>
+                          0
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="h-[5px]"></tr>
+                  <tr class="bg-[#F4F4F4]">
+                    <td
+                      class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                      colspan="4"
+                    >
+                      <div class="flex uppercase">
+                        <div class="w-[25%] font-noto400">백금</div>
+                        <div class="w-[25%]">0</div>
+                        <div class="w-[25%]">0</div>
+                        <div class="w-[25%]">
+                          <span class="text-[#EF2E2E]">▲</span>
+                          <span class="text-[#00B63E]">▼</span>
+                          <span class="text-[#999]">=</span>
+                          0
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="h-[5px]"></tr>
+                  <tr class="bg-[#F4F4F4]">
+                    <td
+                      class="text-center font-noto700 text-[16px] py-[12px] rounded-[10px]"
+                      colspan="4"
+                    >
+                      <div class="flex uppercase">
+                        <div class="w-[25%] font-noto400">은</div>
+                        <div class="w-[25%]">0</div>
+                        <div class="w-[25%]">0</div>
+                        <div class="w-[25%]">
+                          <span class="text-[#EF2E2E]">▲</span>
+                          <span class="text-[#00B63E]">▼</span>
+                          <span class="text-[#999]">=</span>
+                          0
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="font-noto500 text-[25px] pb-[16px] text-center">
+              기타금속 도매시세
+            </div>
+            <div
+              class="border border-solid border-[#EFEFEF] p-[30px] pb-[35px] rounded-[30px] shadow-[1px_29px_20px_0px_#F8F8F8] bg-[#fff]"
+            >
+              <table class="w-full">
+                <colgroup>
+                  <col width="25%" />
+                  <col width="25%" />
+                  <col width="25%" />
+                  <col width="25%" />
+                </colgroup>
+                <thead>
+                  <tr
+                    class="text-center text-[#FEA31B] font-noto700 text-[14px] uppercase"
+                  >
+                    <th class="pb-[18px]">구분</th>
+                    <th class="pb-[18px]">기준가(원/g)</th>
+                    <th class="pb-[18px]">기준가(원/kg)</th>
+                    <th class="pb-[18px]">변동</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="bg-[#F4F4F4]">
+                    <td
+                      class="text-center font-noto700 text-[16px] py-[17px] rounded-[10px]"
+                      colspan="4"
+                    >
+                      <div class="flex uppercase">
+                        <div class="w-[25%] font-noto400">청화은</div>
+                        <div class="w-[25%]">0</div>
+                        <div class="w-[25%]">0</div>
+                        <div class="w-[25%]">
+                          <span class="text-[#EF2E2E]">▲</span>
+                          <span class="text-[#00B63E]">▼</span>
+                          <span class="text-[#999]">=</span>
+                          0
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="h-[7px]"></tr>
+                  <tr class="bg-[#F4F4F4]">
+                    <td
+                      class="text-center font-noto700 text-[16px] py-[17px] rounded-[10px]"
+                      colspan="4"
+                    >
+                      <div class="flex uppercase">
+                        <div class="w-[25%] font-noto400">은도금판</div>
+                        <div class="w-[25%]">0</div>
+                        <div class="w-[25%]">0</div>
+                        <div class="w-[25%]">
+                          <span class="text-[#EF2E2E]">▲</span>
+                          <span class="text-[#00B63E]">▼</span>
+                          <span class="text-[#999]">=</span>
+                          0
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="h-[7px]"></tr>
+                  <tr class="bg-[#F4F4F4]">
+                    <td
+                      class="text-center font-noto700 text-[16px] py-[17px] rounded-[10px]"
+                      colspan="4"
+                    >
+                      <div class="flex uppercase">
+                        <div class="w-[25%] font-noto400">청화은가리</div>
+                        <div class="w-[25%]">0</div>
+                        <div class="w-[25%]">0</div>
+                        <div class="w-[25%]">
+                          <span class="text-[#EF2E2E]">▲</span>
+                          <span class="text-[#00B63E]">▼</span>
+                          <span class="text-[#999]">=</span>
+                          0
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="h-[7px]"></tr>
+                  <tr class="bg-[#F4F4F4]">
+                    <td
+                      class="text-center font-noto700 text-[16px] py-[17px] rounded-[10px]"
+                      colspan="4"
+                    >
+                      <div class="flex uppercase">
+                        <div class="w-[25%] font-noto400">질산은</div>
+                        <div class="w-[25%]">0</div>
+                        <div class="w-[25%]">0</div>
+                        <div class="w-[25%]">
+                          <span class="text-[#EF2E2E]">▲</span>
+                          <span class="text-[#00B63E]">▼</span>
+                          <span class="text-[#999]">=</span>
+                          0
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="pt-[52px] relative min-h-[731px]">
+        <div class="absolute inset-0 bg-[#FBFBFB] z-[-2]">
+          <img
+            src="assets/images/footer/bg-ft.png"
+            alt="bg"
+            class="absolute top-[52px] right-0 bottom-0 z-[-1]"
+          />
+        </div>
+
+        <div class="container">
+          <div
+            class="flex gap-[108px] pb-[71px] border-b border-[#E0E0E0] border-solid"
+          >
+            <div class="w-[701px]">
+              <div class="pb-[30px] border-b border-[#E0E0E0] border-solid">
+                <img src="assets/images/footer/shinhan_logo_ft.png" alt="img" />
+              </div>
+
+              <div class="flex gap-[156px] pt-[47px]">
+                <div>
+                  <div
+                    class="uppercase text-[#212326] text-[25px] font-noto500 mb-[20px]"
+                  >
+                    Company
+                  </div>
+                  <div class="flex flex-col leading-[35.2px]">
+                    <div class="text-[#656565]">(주)신한메탈</div>
+                    <div class="text-[#656565]">대표 : 정홍근</div>
+                    <div class="text-[#656565]">
+                      서울 종로구 돈화문로 5가길 1, 3층 305호
+                    </div>
+                    <div class="text-[#656565]">전화 : 02-743-8778</div>
+                    <div class="text-[#656565]">
+                      사업자등록번호 : 101-86-52746
+                    </div>
+                    <div class="text-[#656565]">사업자정보확인</div>
+                    <div class="text-[#656565]">
+                      통신판매업신고 : 제 OO구 - 123호
+                    </div>
+                    <div class="text-[#656565]">
+                      개인정보관리책임자 : 복준일
+                    </div>
+                    <div class="text-[#656565]">
+                      이메일 : shgx2021@naver.com
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div
+                    class="uppercase text-[#212326] text-[25px] font-noto500 mb-[20px]"
+                  >
+                    Quick link
+                  </div>
+                  <div class="flex flex-col leading-[35px]">
+                    <div class="text-[#656565]">이용약관</div>
+                    <div class="text-[#656565]">개인정보처리방침</div>
+                    <div class="text-[#656565]">이메일 무단수집거부</div>
+                    <div class="text-[#656565]">책임의 한계와 t법적고지</div>
+                    <div class="text-[#656565]">문의하기</div>
+                    <div class="text-[#656565]">모바일버전</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex-1 mt-[48px]">
+              <div class="flex justify-between items-center mb-[23px]">
+                <div class="font-noto500 text-[25px]">오시는 길</div>
+                <div>
+                  <img src="assets/images/footer/logo-fast.png" alt="logo" />
+                </div>
+              </div>
+
+              <div
+                class="border-[15px] border-[#fff] rounded-[10px] h-[413px] border-solid"
+              >
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.325979645809!2d126.98907461531178!3d37.57094097979708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2ddf8ef0467%3A0xf0de619dee519abb!2z7ISc7Jq47Yq567OE7IucIOyiheuhnOq1rCDrj4jtmZTrrLjroZw16rCA6ri4IDE!5e0!3m2!1sko!2skr!4v1646284283793!5m2!1sko!2skr"
+                  width="600"
+                  height="550"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  class="w-full h-full"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="text-center pb-[24px] pt-[32px] text-[15px] text-[#797979]"
+          >
+            Copyright 2022 SHINHANMETAL Co., Ltd. All rights Reserved.
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

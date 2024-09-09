@@ -9,37 +9,29 @@
   color: #fff;
   padding: 9.5px 0;
 }
-.home {
+
+/* Ẩn nội dung các tab không hoạt động */
+.tab-content,
+.tab-content-2 {
+  display: none;
 }
-.home {
+
+/* Hiển thị tab đang hoạt động */
+.tab-content.active,
+.tab-content-2.active-2 {
+  display: block;
 }
-.home {
+
+/* CSS cho các nút tab */
+.tab-button,
+.tab-button-2 {
+  background-color: #f8f8f8;
+  color: #343434;
 }
-.home {
-}
-.home {
-}
-.home {
-}
-.home {
-}
-.home {
-}
-.home {
-}
-.home {
-}
-.home {
-}
-.home {
-}
-.home {
-}
-.home {
-}
-.home {
-}
-.home {
-}
-.home {
+
+/* Nút tab đang hoạt động */
+.tab-button.active,
+.tab-button-2.active-2 {
+  background-color: #343434;
+  color: #fff;
 }
