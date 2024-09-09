@@ -139,7 +139,8 @@
         </div>
       </div>
 
-      <div class="container">
+      <!-- banner -->
+      <div class="container lg:block hidden">
         <div class="h-[61px] flex items-center justify-between">
           <div class="flex justify-between">
             <div class="text-[#FEA31B] flex leading-none">
@@ -163,25 +164,32 @@
           </div>
         </div>
       </div>
+
       <div class="flex-1">
         <div class="relative">
           <img src="assets/images/home/banner.png" alt="banner" />
-          <div class="absolute bottom-[-150px] left-0 right-0">
+          <div
+            class="absolute md:bottom-[-150px] bottom-[-250px] left-0 right-0 px-[16px]"
+          >
             <div
               class="bg-[#343434] max-w-[1200px] mx-auto rounded-t-[20px] py-[21px]"
             >
               <div
-                class="text-[#fff] font-noto500 text-[28px] text-center uppercase"
+                class="text-[#fff] font-noto500 md:text-[28px] text-[14px] text-center uppercase"
               >
                 Best source for currency conversion, tracking exchange rates
               </div>
             </div>
 
             <div
-              class="bg-[#fff] max-w-[1200px] mx-auto rounded-b-[20px] h-[150px] shadow-[1px_29px_20px_0px_#F8F8F8]"
+              class="bg-[#fff] max-w-[1200px] mx-auto rounded-b-[20px] lg:h-[150px] shadow-[1px_29px_20px_0px_#F8F8F8]"
             >
-              <div class="flex gap-[33px] pt-[27px] pb-[43px] px-[50px]">
-                <div class="flex gap-[17px] flex-1 justify-between">
+              <div
+                class="flex md:gap-[33px] gap-[20px] pt-[27px] pb-[43px] px-[50px] flex-col md:flex-row"
+              >
+                <div
+                  class="flex gap-[17px] flex-1 justify-between flex-col md:flex-row"
+                >
                   <div>
                     <div class="text-[#343434] text-[15px] mb-[6px]">
                       Amount
@@ -217,7 +225,11 @@
                     <img src="assets/images/home/arrow.png" alt="arrow" />
                   </div>
                   <div>
-                    <div class="text-[#343434] text-[15px] mb-[6px]">To</div>
+                    <div
+                      class="text-[#343434] text-[15px] mb-[6px] md:block hidden"
+                    >
+                      To
+                    </div>
                     <div
                       class="border-[#EBEBEB] border border-solid h-[55px] px-[25px] rounded-[10px] shadow-[1px_10px_12px_0px_#F8F8F8] flex items-center gap-[11px] justify-between"
                     >
@@ -234,7 +246,7 @@
                   </div>
                 </div>
                 <div
-                  class="bg-[#FEA31B] text-center text-[#fff] rounded-[10px] w-[160px] h-[55px] leading-[55px] mt-auto cursor-pointer"
+                  class="bg-[#FEA31B] text-center text-[#fff] rounded-[10px] md:w-[160px] h-[55px] leading-[55px] mt-auto cursor-pointer"
                 >
                   CONVERT
                 </div>
@@ -2016,14 +2028,14 @@
 
         <div class="container">
           <div
-            class="flex gap-[108px] pb-[71px] border-b border-[#E0E0E0] border-solid"
+            class="flex gap-[108px] pb-[71px] border-b border-[#E0E0E0] border-solid flex-col xl:flex-row"
           >
-            <div class="w-[701px]">
+            <div class="xl:w-[701px]">
               <div class="pb-[30px] border-b border-[#E0E0E0] border-solid">
                 <img src="assets/images/footer/shinhan_logo_ft.png" alt="img" />
               </div>
 
-              <div class="flex gap-[156px] pt-[47px]">
+              <div class="flex gap-[156px] pt-[47px] flex-col lg:flex-row">
                 <div>
                   <div
                     class="uppercase text-[#212326] text-[25px] font-noto500 mb-[20px]"
