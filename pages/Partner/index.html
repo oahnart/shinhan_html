@@ -3,9 +3,122 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Partner</title>
+
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            padding: {
+              xl: "16px",
+              DEFAULT: "16px",
+            },
+            screens: {
+              xl: "1403px",
+            },
+          },
+          extend: {
+            boxShadow: {
+              custom: "0px 15px 15px 0px rgba(0, 0, 0, 0.08)",
+            },
+          },
+          fontFamily: {
+            noto200: ["NotoSansKR-Thin"],
+            noto300: ["NotoSansKR-Light"],
+            noto400: ["NotoSansKR-Regular"],
+            noto500: ["NotoSansKR-Medium"],
+            noto700: ["NotoSansKR-Bold"],
+          },
+          screens: {
+            xxs: "360px",
+            xs: "475px",
+            sm: "640px",
+            md: "768px",
+            lg: "1024px",
+            xl: "1280px",
+            "2xl": "1400px",
+          },
+        },
+      };
+    </script>
   </head>
   <body>
-    <div>home</div>
+    <div>
+      <!-- banner -->
+      <div class="relative bg-[#ECECEC] h-[122px] xs:block hidden">
+        <img
+          src="/assets/images/template/subheader.png"
+          alt="img"
+          class="absolute inset-[-1]"
+        />
+        <div
+          class="flex justify-center items-center font-noto500 text-[38px] relative inset-0 h-full"
+        >
+          협력업체
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="text-center font-noto500 text-[26px] mt-[25px] xs:hidden">
+          협력업체
+        </div>
+
+        <!-- break crumb -->
+        <div class="py-[15px] xs:flex hidden justify-center items-center">
+          <div class="flex">
+            <div class="text-[15px] text-[#999999]">Home</div>
+            <div class="text-[15px] text-[#999999] px-[10px]">/</div>
+            <div class="text-[15px] text-[#848484] font-noto700">협력업체</div>
+          </div>
+        </div>
+
+        <!-- main content-->
+        <div
+          class="md:py-[50px] pt-[32px] pb-[22px] grid md:grid-cols-4 grid-cols-2 md:gap-x-[30px] md:gap-y-[61px] gap-x-[8px] gap-y-[26px]"
+        >
+          <div>
+            <div
+              class="md:text-[20px] text-[14px] font-noto500 text-center md:pb-[11px] pb-[8px]"
+            >
+              삼성금거래소
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1725203574073-79922f64110a?q=80&w=2012&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="img"
+              class="rounded-[25px] w-full h-[186px] object-cover border border-solid border-[#EFEFEF]"
+            />
+          </div>
+        </div>
+
+        <!-- pagination -->
+        <div class="flex justify-center md:mb-[119px] mb-[50px] cursor-pointer">
+          <div
+            class="h-[40px] w-[40px] flex justify-center items-center border-solid border-r border-[#E9E9E9]"
+          >
+            <img src="/assets/images/partner/back.png" alt="img" />
+          </div>
+          <div
+            class="h-[40px] w-[40px] flex justify-center items-center text-[#000] text-[15px] font-noto700"
+          >
+            1
+          </div>
+          <div
+            class="h-[40px] w-[40px] flex justify-center items-center text-[#999999] text-[15px] border-solid border-l border-[#E9E9E9]"
+          >
+            2
+          </div>
+          <div
+            class="h-[40px] w-[40px] flex justify-center items-center border-solid border-l border-[#E9E9E9]"
+          >
+            <img src="/assets/images/partner/next.png" alt="img" />
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
