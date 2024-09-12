@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BusinessInfo</title>
+
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            padding: {
+              xl: "16px",
+              DEFAULT: "16px",
+            },
+            screens: {
+              xl: "1403px",
+            },
+          },
+          extend: {
+            boxShadow: {
+              custom: "0px 15px 15px 0px rgba(0, 0, 0, 0.08)",
+            },
+          },
+          fontFamily: {
+            noto200: ["NotoSansKR-Thin"],
+            noto300: ["NotoSansKR-Light"],
+            noto400: ["NotoSansKR-Regular"],
+            noto500: ["NotoSansKR-Medium"],
+            noto700: ["NotoSansKR-Bold"],
+          },
+          screens: {
+            xxs: "360px",
+            xs: "475px",
+            sm: "640px",
+            md: "768px",
+            lg: "1024px",
+            xl: "1280px",
+            "2xl": "1400px",
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div>
+      <!-- banner -->
+      <div class="relative bg-[#ECECEC] h-[122px] xs:block hidden">
+        <img
+          src="/assets/images/template/subheader.png"
+          alt="img"
+          class="absolute inset-[-1]"
+        />
+        <div
+          class="flex justify-center items-center font-noto500 text-[38px] relative inset-0 h-full"
+        >
+          사업장
+        </div>
+      </div>
+
+      <div class="container md:mb-[74 px] mb-[68px]">
+        <div
+          class="text-center font-noto500 text-[26px] mt-[25px] mb-[32px] xs:hidden"
+        >
+          사업장
+        </div>
+
+        <!-- break crumb -->
+        <div
+          class="pt-[15px] pb-[37px] xs:flex hidden justify-center items-center"
+        >
+          <div class="flex">
+            <div class="text-[15px] text-[#999999]">Home</div>
+            <div class="text-[15px] text-[#999999] px-[10px]">/</div>
+            <div class="text-[15px] text-[#999999]">기업정보</div>
+            <div class="text-[15px] text-[#999999] px-[10px]">/</div>
+            <div class="text-[15px] text-[#848484] font-noto700">사업장</div>
+          </div>
+        </div>
+        <!-- main content-->
+        <div
+          class="border border-solid border-[#efefef] rounded-[30px] lg:pt-[46px] lg:pb-[110 px] lg:px-[59px] px-[18px] pt-[24px] pb-[59px] shadow-[0_15px_20px_0px_#F4F4F4]"
+        >
+          <div class="flex md:gap-[65px] gap-[35px] lg:flex-row flex-col">
+            <div
+              class="border-[15px] border-[#fff] rounded-[10px] border-solid flex-1 shadow-[0_20px_29px_0px_#0000000D]"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.325979645809!2d126.98907461531178!3d37.57094097979708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2ddf8ef0467%3A0xf0de619dee519abb!2z7ISc7Jq47Yq567OE7IucIOyiheuhnOq1rCDrj4jtmZTrrLjroZw16rCA6ri4IDE!5e0!3m2!1sko!2skr!4v1646284283793!5m2!1sko!2skr"
+                width="600"
+                height="550"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                class="w-full h-full md:min-h-[600px] min-h-[400px]"
+              ></iframe>
+            </div>
+            <div class="flex-1">
+              <div class="flex gap-[6px] items-center pb-[18px]">
+                <div>
+                  <img
+                    src="/assets/images/business_location/train.png"
+                    alt="img"
+                  />
+                </div>
+                <div class="text-[#000] font-noto500 text-[22px] leading-none">
+                  교통안내
+                </div>
+              </div>
+              <!-- table-->
+              <div>
+                <div
+                  class="flex bg-[#FAFAFA] h-[45px] leading-[45px] text-[#999] font-noto500"
+                >
+                  <div class="w-[33.33%] text-center">구분</div>
+                  <div class="w-[33.33%] text-center">이용노선</div>
+                  <div class="w-[33.33%] text-center">이용방법</div>
+                </div>
+                <div class="flex font-noto500">
+                  <div
+                    class="w-[33.33%] border-[#EFEFEF] border border-solid flex justify-center items-center h-[70px]"
+                  >
+                    지하철
+                  </div>
+                  <div
+                    class="w-[33.33%] border-[#EFEFEF] border border-solid flex justify-center items-center h-[70px]"
+                  >
+                    3호선
+                  </div>
+                  <div
+                    class="w-[33.33%] border-[#EFEFEF] border border-solid flex justify-center items-center h-[70px] px-[12px]"
+                  >
+                    종로3가역 2-1번 출구
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex gap-[6px] items-center md:mt-[26px] mt-[22px] pb-[18px]"
+              >
+                <div>
+                  <img
+                    src="/assets/images/business_location/company.png"
+                    alt="img"
+                  />
+                </div>
+                <div class="text-[#000] font-noto500 text-[22px] leading-none">
+                  회사개요
+                </div>
+              </div>
+              <!-- table-->
+              <div>
+                <div
+                  class="flex bg-[#FAFAFA] h-[45px] leading-[45px] text-[#999] font-noto500"
+                >
+                  <div class="w-[50%] text-center">구분</div>
+                  <div class="w-[50%] text-center">내용</div>
+                </div>
+                <div class="flex font-noto500">
+                  <div
+                    class="w-[50%] border-[#EFEFEF] border border-solid flex justify-center items-center h-[70px]"
+                  >
+                    대표이사
+                  </div>
+                  <div
+                    class="w-[50%] border-[#EFEFEF] border border-solid flex justify-center items-center h-[70px]"
+                  >
+                    정 홍 근
+                  </div>
+                </div>
+                <div class="flex font-noto500">
+                  <div
+                    class="w-[50%] border-[#EFEFEF] border border-solid flex justify-center items-center h-[70px]"
+                  >
+                    소재지
+                  </div>
+                  <div
+                    class="w-[50%] border-[#EFEFEF] border border-solid flex justify-center items-center h-[70px] px-[13.5px] md:text-[16px] text-[14px]"
+                  >
+                    서울 종로구 돈화문로 5가길 1, 3층 305호
+                  </div>
+                </div>
+                <div class="flex font-noto500">
+                  <div
+                    class="w-[50%] border-[#EFEFEF] border border-solid flex justify-center items-center h-[70px]"
+                  >
+                    설립일
+                  </div>
+                  <div
+                    class="w-[50%] border-[#EFEFEF] border border-solid flex justify-center items-center h-[70px]"
+                  >
+                    2010년 1월 26일
+                  </div>
+                </div>
+                <div class="flex font-noto500">
+                  <div
+                    class="w-[50%] border-[#EFEFEF] border border-solid flex justify-center items-center h-[70px]"
+                  >
+                    주요사업
+                  </div>
+                  <div
+                    class="w-[50%] border-[#EFEFEF] border border-solid flex justify-center items-center h-[70px] px-[13.5px] md:text-[16px] text-[14px]"
+                  >
+                    금, 은, 주얼리 제품 제조 및 판매업
+                  </div>
+                </div>
+                <div class="flex font-noto500">
+                  <div
+                    class="w-[50%] border-[#EFEFEF] border border-solid flex justify-center items-center h-[70px]"
+                  >
+                    대표전화
+                  </div>
+                  <div
+                    class="w-[50%] border-[#EFEFEF] border border-solid flex justify-center items-center h-[70px] px-[13.5px] md:text-[16px] text-[14px]"
+                  >
+                    02-743-8778/ FAX 02-743-8779
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
