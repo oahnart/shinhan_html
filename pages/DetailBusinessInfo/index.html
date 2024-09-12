@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BusinessInfo</title>
+
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            padding: {
+              xl: "16px",
+              DEFAULT: "16px",
+            },
+            screens: {
+              xl: "1403px",
+            },
+          },
+          extend: {
+            boxShadow: {
+              custom: "0px 15px 15px 0px rgba(0, 0, 0, 0.08)",
+            },
+          },
+          fontFamily: {
+            noto200: ["NotoSansKR-Thin"],
+            noto300: ["NotoSansKR-Light"],
+            noto400: ["NotoSansKR-Regular"],
+            noto500: ["NotoSansKR-Medium"],
+            noto700: ["NotoSansKR-Bold"],
+          },
+          screens: {
+            xxs: "360px",
+            xs: "475px",
+            sm: "640px",
+            md: "768px",
+            lg: "1024px",
+            xl: "1280px",
+            "2xl": "1400px",
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div>
+      <!-- banner -->
+      <div class="relative bg-[#ECECEC] h-[122px] xs:block hidden">
+        <img
+          src="/assets/images/template/subheader.png"
+          alt="img"
+          class="absolute inset-[-1]"
+        />
+        <div
+          class="flex justify-center items-center font-noto500 text-[38px] relative inset-0 h-full"
+        >
+          공지사항
+        </div>
+      </div>
+
+      <div class="container md:mb-[72px] mb-[45px]">
+        <div
+          class="text-center font-noto500 text-[26px] mt-[25px] mb-[32px] xs:hidden"
+        >
+          공지사항
+        </div>
+
+        <!-- break crumb -->
+        <div
+          class="pt-[15px] pb-[37px] xs:flex hidden justify-center items-center"
+        >
+          <div class="flex">
+            <div class="text-[15px] text-[#999999]">Home</div>
+            <div class="text-[15px] text-[#999999] px-[10px]">/</div>
+            <div class="text-[15px] text-[#999999]">기업정보</div>
+            <div class="text-[15px] text-[#999999] px-[10px]">/</div>
+            <div class="text-[15px] text-[#999999]">공지사항</div>
+            <div class="text-[15px] text-[#999999] px-[10px]">/</div>
+            <div class="text-[15px] text-[#848484] font-noto700">
+              공지사항입니다 05
+            </div>
+          </div>
+        </div>
+        <!-- main content-->
+        <div
+          class="border border-solid border-[#efefef] rounded-[30px] lg:pt-[33px] lg:pb-[58px] lg:px-[150px] xs:px-[50px] px-[17px] py-[30px] shadow-[0_15px_20px_0px_#F4F4F4]"
+        >
+          <div
+            class="flex justify-between border-b border-dashed border-[#D8D8D8] md:pb-[30px] pb-[22px] md:flex-row flex-col gap-[16px]"
+          >
+            <div
+              class="flex xs:gap-[30px] gap-[12px] xs:justify-start justify-between"
+            >
+              <div class="flex gap-[8px]">
+                <div>
+                  <img
+                    src="/assets/images/detail_business_info/user.png"
+                    alt="img"
+                  />
+                </div>
+                <div class="text-[13px] text-[#999]">신한메탈</div>
+              </div>
+              <div class="flex gap-[8px]">
+                <div>
+                  <img
+                    src="/assets/images/detail_business_info/eye.png"
+                    alt="img"
+                  />
+                </div>
+                <div class="text-[13px] text-[#999]">102</div>
+              </div>
+              <div class="flex gap-[8px]">
+                <div>
+                  <img
+                    src="/assets/images/detail_business_info/clock.png"
+                    alt="img"
+                  />
+                </div>
+                <div class="text-[13px] text-[#999]">
+                  2022.04.04 <span class="pl-[10px]">01:01</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-[30px] md:justify-start justify-between">
+              <div class="flex gap-[8px] cursor-pointer">
+                <div>
+                  <img
+                    src="/assets/images/detail_business_info/arrow-left.png"
+                    alt="img"
+                  />
+                </div>
+                <div class="text-[13px] text-[#999]">Back to list page</div>
+              </div>
+              <div class="flex gap-[8px] cursor-pointer">
+                <div>
+                  <img
+                    src="/assets/images/detail_business_info/arrow-right.png"
+                    alt="img"
+                  />
+                </div>
+                <div class="text-[13px] text-[#999]">Next page</div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="text-center md:text-[32px] text-[20px] md:mt-[40px] md:mb-[21px] mt-[25px] mb-[9px]"
+          >
+            공지사항입니다 05
+          </div>
+          <div class="text-[#696969]">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
