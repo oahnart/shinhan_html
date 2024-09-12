@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BusinessIntroduce</title>
+    <title>BusinessInfo</title>
 
     <link rel="stylesheet" href="/assets/css/reset.css" />
     <link rel="stylesheet" href="/assets/css/main.css" />
@@ -63,13 +63,17 @@
         </div>
       </div>
 
-      <div class="container">
-        <div class="text-center font-noto500 text-[26px] mt-[25px] xs:hidden">
+      <div class="container md:mb-[84px] mb-[70px]">
+        <div
+          class="text-center font-noto500 text-[26px] mt-[25px] mb-[30px] xs:hidden"
+        >
           사업소개
         </div>
 
         <!-- break crumb -->
-        <div class="py-[15px] xs:flex hidden justify-center items-center">
+        <div
+          class="pt-[15px] pb-[42px] xs:flex hidden justify-center items-center"
+        >
           <div class="flex">
             <div class="text-[15px] text-[#999999]">Home</div>
             <div class="text-[15px] text-[#999999] px-[10px]">/</div>
@@ -78,44 +82,131 @@
         </div>
 
         <!-- main content-->
-        <div
-          class="md:py-[50px] pt-[32px] pb-[22px] grid md:grid-cols-4 grid-cols-2 md:gap-x-[30px] md:gap-y-[61px] gap-x-[8px] gap-y-[26px]"
-        >
-          <div>
-            <div
-              class="md:text-[20px] text-[14px] font-noto500 text-center md:pb-[11px] pb-[8px]"
-            >
-              삼성금거래소
-            </div>
-            <img
-              src="https://images.unsplash.com/photo-1725203574073-79922f64110a?q=80&w=2012&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="img"
-              class="rounded-[25px] w-full xs:h-[186px] h-[108px] object-cover border border-solid border-[#EFEFEF]"
-            />
-          </div>
-        </div>
+        <div class="relative">
+          <img
+            src="/assets/images/business_info/mask_group.png"
+            alt="bg"
+            class="absolute inset-0 z-[-1] w-full object-cover"
+          />
 
-        <!-- pagination -->
-        <div class="flex justify-center md:mb-[119px] mb-[50px] cursor-pointer">
           <div
-            class="h-[40px] w-[40px] flex justify-center items-center border-solid border-r border-[#E9E9E9]"
+            class="border border-solid border-[#efefef] rounded-[30px] md:pt-[85px] md:pb-[74px] md:px-[110px] py-[41px] px-[8px]"
           >
-            <img src="/assets/images/partner/back.png" alt="img" />
-          </div>
-          <div
-            class="h-[40px] w-[40px] flex justify-center items-center text-[#000] text-[15px] font-noto700"
-          >
-            1
-          </div>
-          <div
-            class="h-[40px] w-[40px] flex justify-center items-center text-[#999999] text-[15px] border-solid border-l border-[#E9E9E9]"
-          >
-            2
-          </div>
-          <div
-            class="h-[40px] w-[40px] flex justify-center items-center border-solid border-l border-[#E9E9E9]"
-          >
-            <img src="/assets/images/partner/next.png" alt="img" />
+            <div class="text-center max-w-[1000px]">
+              <img
+                src="/assets/images/business_info/icon_start.png"
+                alt="img"
+                class="inline-block align-top md:pr-[10px] md:h-auto h-[20px]"
+              />
+              <span
+                class="text-[#ABABAB] md:text-[46px] text-[24px] font-noto500 leading-none"
+              >
+                (주) 신한메탈은 금 , 은 , 팔라듐 등 귀금속을 B2B로 유통하는
+                기업입니다.
+              </span>
+              <img
+                src="/assets/images/business_info/icon_end.png"
+                alt="img"
+                class="inline-block md:h-auto h-[20px]"
+              />
+            </div>
+
+            <div
+              class="xs:flex hidden gap-[37px] md:pt-[66px] md:pb-[112px] pt-[48px] pb-[56px] lg:flex-row flex-col"
+            >
+              <img src="/assets/images/business_info/main.png" alt="main" />
+              <img src="/assets/images/business_info/main2.png" alt="main" />
+            </div>
+            <div class="xs:hidden flex gap-[37px] pt-[48px] pb-[56px] flex-col">
+              <img
+                src="/assets/images/business_info/main_mobile.png"
+                alt="main"
+              />
+              <img
+                src="/assets/images/business_info/main2_mobile.png"
+                alt="main"
+              />
+            </div>
+
+            <div>
+              <div
+                class="flex bg-[#FAFAFA] h-[45px] leading-[45px] text-[#999] font-noto500"
+              >
+                <div class="w-[33.33%] text-center">사업분야</div>
+                <div class="w-[33.33%] text-center">사업항목</div>
+                <div class="w-[33.33%] text-center">주요내용</div>
+              </div>
+              <div class="flex">
+                <div
+                  class="w-[33.33%] text-center border-[#EFEFEF] border border-solid flex justify-center items-center"
+                >
+                  <div class="md:text-[20px] text-[13px] font-noto500">
+                    국내 사업부문
+                  </div>
+                </div>
+                <div class="w-[66.66%]">
+                  <div class="flex">
+                    <div class="w-[50%]">
+                      <div
+                        class="md:text-[16px] text-[13px] font-noto500 text-center border-[#EFEFEF] border border-solid h-[70px] flex justify-center items-center"
+                      >
+                        귀금속 원자재 판매
+                      </div>
+                    </div>
+                    <div class="w-[50%]">
+                      <div
+                        class="md:text-[16px] text-[13px] font-noto500 text-center border-[#EFEFEF] border border-solid h-[70px] flex justify-center items-center px-[5px]"
+                      >
+                        Gold, Silver, Platinum, Palladium
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex">
+                    <div class="w-[50%]">
+                      <div
+                        class="md:text-[16px] text-[13px] font-noto500 text-center border-[#EFEFEF] border border-solid h-[70px] flex justify-center items-center"
+                      >
+                        도금 원자재 판매
+                      </div>
+                    </div>
+                    <div class="w-[50%]">
+                      <div
+                        class="md:text-[16px] text-[13px] font-noto500 text-center border-[#EFEFEF] border border-solid h-[70px] flex justify-center items-center px-[5px]"
+                      >
+                        청화금, 청화은, 은판, 은접점소재, Target
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex">
+                <div
+                  class="w-[33.33%] text-center border-[#EFEFEF] border border-solid flex justify-center items-center"
+                >
+                  <div class="md:text-[20px] text-[13px] font-noto500">
+                    해외 사업부문
+                  </div>
+                </div>
+                <div class="w-[66.66%]">
+                  <div class="flex h-full">
+                    <div class="w-[50%]">
+                      <div
+                        class="md:text-[16px] text-[13px] font-noto500 text-center border-[#EFEFEF] border border-solid h-[70px] flex justify-center items-center"
+                      >
+                        원자제 수출입 사업
+                      </div>
+                    </div>
+                    <div class="w-[50%]">
+                      <div
+                        class="md:text-[16px] text-[13px] font-noto500 text-center border-[#EFEFEF] border border-solid h-[70px] flex justify-center items-center"
+                      >
+                        Gold Bar, Gold Granule
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

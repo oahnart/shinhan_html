@@ -59,153 +59,137 @@
         <div
           class="flex justify-center items-center font-noto500 text-[38px] relative inset-0 h-full"
         >
-          사업소개
+          공지사항
         </div>
       </div>
 
-      <div class="container md:mb-[84px] mb-[70px]">
+      <div class="container md:mb-[84px] mb-[58px]">
         <div
-          class="text-center font-noto500 text-[26px] mt-[25px] mb-[30px] xs:hidden"
+          class="text-center font-noto500 text-[26px] mt-[25px] mb-[32px] xs:hidden"
         >
-          사업소개
+          공지사항
         </div>
 
         <!-- break crumb -->
         <div
-          class="pt-[15px] pb-[42px] xs:flex hidden justify-center items-center"
+          class="pt-[15px] pb-[32px] xs:flex hidden justify-center items-center"
         >
           <div class="flex">
             <div class="text-[15px] text-[#999999]">Home</div>
             <div class="text-[15px] text-[#999999] px-[10px]">/</div>
-            <div class="text-[15px] text-[#848484] font-noto700">사업소개</div>
+            <div class="text-[15px] text-[#999999]">기업정보</div>
+            <div class="text-[15px] text-[#999999] px-[10px]">/</div>
+            <div class="text-[15px] text-[#848484] font-noto700">공지사항</div>
           </div>
         </div>
-
         <!-- main content-->
-        <div class="relative">
-          <img
-            src="/assets/images/business_info/mask_group.png"
-            alt="bg"
-            class="absolute inset-0 z-[-1] w-full object-cover"
-          />
-
+        <div
+          class="md:border border-solid border-[#efefef] rounded-[30px] lg:pt-[40px] lg:pb-[77px] lg:px-[84px] md:pt-[32px] md:pb-[58px] md:px-[16px] md:shadow-[0_15px_20px_0px_#F4F4F4]"
+        >
           <div
-            class="border border-solid border-[#efefef] rounded-[30px] md:pt-[85px] md:pb-[74px] md:px-[110px] py-[41px] px-[8px]"
+            class="bg-[#fff] shadow-[0px_0px_20px_0px_#00000014] h-[50px] px-[25px] rounded-[50px] shadow-[1px_10px_12px_0px_#F8F8F8] flex items-center gap-[11px] justify-between max-w-[450px] mx-auto"
           >
-            <div class="text-center max-w-[1000px]">
-              <img
-                src="/assets/images/business_info/icon_start.png"
-                alt="img"
-                class="inline-block align-top md:pr-[10px] md:h-auto h-[20px]"
-              />
-              <span
-                class="text-[#ABABAB] md:text-[46px] text-[24px] font-noto500 leading-none"
-              >
-                (주) 신한메탈은 금 , 은 , 팔라듐 등 귀금속을 B2B로 유통하는
-                기업입니다.
-              </span>
-              <img
-                src="/assets/images/business_info/icon_end.png"
-                alt="img"
-                class="inline-block md:h-auto h-[20px]"
-              />
-            </div>
+            <input
+              class="focus:outline-none text-[16px] font-noto500 w-full flex-1 placeholder:text-[#999999] placeholder:font-noto400 placeholder:text-[16px]"
+              placeholder="Search..."
+            />
+            <img
+              src="/assets/images/business_info/icon_search.png"
+              alt="img"
+              class="min-w-[18px]"
+            />
+          </div>
 
+          <!-- table pc -->
+          <div class="mt-[43px] md:block hidden">
             <div
-              class="xs:flex hidden gap-[37px] md:pt-[66px] md:pb-[112px] pt-[48px] pb-[56px] lg:flex-row flex-col"
+              class="flex bg-[#FAFAFA] h-[45px] leading-[45px] text-[#999] font-noto500"
             >
-              <img src="/assets/images/business_info/main.png" alt="main" />
-              <img src="/assets/images/business_info/main2.png" alt="main" />
+              <div class="w-[8%] text-center">번호</div>
+              <div class="w-[43%] text-center">제목</div>
+              <div class="w-[28%] text-center">글쓴이</div>
+              <div class="w-[10.5%] text-center">날짜</div>
+              <div class="w-[10.5%] text-center">조회</div>
             </div>
-            <div class="xs:hidden flex gap-[37px] pt-[48px] pb-[56px] flex-col">
-              <img
-                src="/assets/images/business_info/main_mobile.png"
-                alt="main"
-              />
-              <img
-                src="/assets/images/business_info/main2_mobile.png"
-                alt="main"
-              />
-            </div>
-
-            <div>
+            <div class="flex">
               <div
-                class="flex bg-[#FAFAFA] h-[45px] leading-[45px] text-[#999] font-noto500"
+                class="w-[8%] text-center border-[#EFEFEF] border border-solid flex justify-center items-center lg:text-[17px] text-[13px] h-[70px]"
               >
-                <div class="w-[33.33%] text-center">사업분야</div>
-                <div class="w-[33.33%] text-center">사업항목</div>
-                <div class="w-[33.33%] text-center">주요내용</div>
+                6
               </div>
-              <div class="flex">
-                <div
-                  class="w-[33.33%] text-center border-[#EFEFEF] border border-solid flex justify-center items-center"
-                >
-                  <div class="md:text-[20px] text-[13px] font-noto500">
-                    국내 사업부문
-                  </div>
-                </div>
-                <div class="w-[66.66%]">
-                  <div class="flex">
-                    <div class="w-[50%]">
-                      <div
-                        class="md:text-[16px] text-[13px] font-noto500 text-center border-[#EFEFEF] border border-solid h-[70px] flex justify-center items-center"
-                      >
-                        귀금속 원자재 판매
-                      </div>
-                    </div>
-                    <div class="w-[50%]">
-                      <div
-                        class="md:text-[16px] text-[13px] font-noto500 text-center border-[#EFEFEF] border border-solid h-[70px] flex justify-center items-center px-[5px]"
-                      >
-                        Gold, Silver, Platinum, Palladium
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flex">
-                    <div class="w-[50%]">
-                      <div
-                        class="md:text-[16px] text-[13px] font-noto500 text-center border-[#EFEFEF] border border-solid h-[70px] flex justify-center items-center"
-                      >
-                        도금 원자재 판매
-                      </div>
-                    </div>
-                    <div class="w-[50%]">
-                      <div
-                        class="md:text-[16px] text-[13px] font-noto500 text-center border-[#EFEFEF] border border-solid h-[70px] flex justify-center items-center px-[5px]"
-                      >
-                        청화금, 청화은, 은판, 은접점소재, Target
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div
+                class="w-[43%] text-center border-[#EFEFEF] border border-solid flex justify-center items-center lg:text-[17px] text-[13px] h-[70px] font-noto500"
+              >
+                공지사항입니다 05
               </div>
-              <div class="flex">
-                <div
-                  class="w-[33.33%] text-center border-[#EFEFEF] border border-solid flex justify-center items-center"
-                >
-                  <div class="md:text-[20px] text-[13px] font-noto500">
-                    해외 사업부문
-                  </div>
-                </div>
-                <div class="w-[66.66%]">
-                  <div class="flex h-full">
-                    <div class="w-[50%]">
-                      <div
-                        class="md:text-[16px] text-[13px] font-noto500 text-center border-[#EFEFEF] border border-solid h-[70px] flex justify-center items-center"
-                      >
-                        원자제 수출입 사업
-                      </div>
-                    </div>
-                    <div class="w-[50%]">
-                      <div
-                        class="md:text-[16px] text-[13px] font-noto500 text-center border-[#EFEFEF] border border-solid h-[70px] flex justify-center items-center"
-                      >
-                        Gold Bar, Gold Granule
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div
+                class="w-[28%] text-center border-[#EFEFEF] border border-solid flex justify-center items-center lg:text-[17px] text-[13px] h-[70px]"
+              >
+                신한메탈
               </div>
+              <div
+                class="w-[10.5%] text-center border-[#EFEFEF] border border-solid flex justify-center items-center lg:text-[17px] text-[13px] h-[70px]"
+              >
+                2022.04.04
+              </div>
+              <div
+                class="w-[10.5%] text-center border-[#EFEFEF] border border-solid flex justify-center items-center lg:text-[17px] text-[13px] h-[70px]"
+              >
+                6267
+              </div>
+            </div>
+          </div>
+          <!-- table mobile -->
+          <div
+            class="md:hidden border-b border-solid border-[#E4E4E4] mt-[36px]"
+          >
+            <div class="py-[23px] border-t border-solid border-[#E4E4E4]">
+              <div class="font-noto500 text-[17px] pb-[5px] leading-[22px]">
+                공지사항입니다 05
+              </div>
+              <div
+                class="flex gap-[15px] text-[#666] text-[14px] leading-[18px]"
+              >
+                <div>신한메탈</div>
+                <div>2022.04.04</div>
+              </div>
+            </div>
+            <div class="py-[23px] border-t border-solid border-[#E4E4E4]">
+              <div class="font-noto500 text-[17px] pb-[5px] leading-[22px]">
+                공지사항입니다 05
+              </div>
+              <div
+                class="flex gap-[15px] text-[#666] text-[14px] leading-[18px]"
+              >
+                <div>신한메탈</div>
+                <div>2022.04.04</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- pagination -->
+          <div
+            class="flex justify-center md:mt-[50px] mt-[27px] cursor-pointer"
+          >
+            <div
+              class="h-[40px] w-[40px] flex justify-center items-center border-solid border-r border-[#E9E9E9]"
+            >
+              <img src="/assets/images/partner/back.png" alt="img" />
+            </div>
+            <div
+              class="h-[40px] w-[40px] flex justify-center items-center text-[#000] text-[15px] font-noto700"
+            >
+              1
+            </div>
+            <div
+              class="h-[40px] w-[40px] flex justify-center items-center text-[#999999] text-[15px] border-solid border-l border-[#E9E9E9]"
+            >
+              2
+            </div>
+            <div
+              class="h-[40px] w-[40px] flex justify-center items-center border-solid border-l border-[#E9E9E9]"
+            >
+              <img src="/assets/images/partner/next.png" alt="img" />
             </div>
           </div>
         </div>
