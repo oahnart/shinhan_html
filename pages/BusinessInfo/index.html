@@ -3,9 +3,213 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>BusinessInfo</title>
+
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            padding: {
+              xl: "16px",
+              DEFAULT: "16px",
+            },
+            screens: {
+              xl: "1403px",
+            },
+          },
+          extend: {
+            boxShadow: {
+              custom: "0px 15px 15px 0px rgba(0, 0, 0, 0.08)",
+            },
+          },
+          fontFamily: {
+            noto200: ["NotoSansKR-Thin"],
+            noto300: ["NotoSansKR-Light"],
+            noto400: ["NotoSansKR-Regular"],
+            noto500: ["NotoSansKR-Medium"],
+            noto700: ["NotoSansKR-Bold"],
+          },
+          screens: {
+            xxs: "360px",
+            xs: "475px",
+            sm: "640px",
+            md: "768px",
+            lg: "1024px",
+            xl: "1280px",
+            "2xl": "1400px",
+          },
+        },
+      };
+    </script>
   </head>
   <body>
-    <div>home</div>
+    <div>
+      <!-- banner -->
+      <div class="relative bg-[#ECECEC] h-[122px] xs:block hidden">
+        <img
+          src="/assets/images/template/subheader.png"
+          alt="img"
+          class="absolute inset-[-1]"
+        />
+        <div
+          class="flex justify-center items-center font-noto500 text-[38px] relative inset-0 h-full"
+        >
+          사업소개
+        </div>
+      </div>
+
+      <div class="container md:mb-[84px] mb-[70px]">
+        <div
+          class="text-center font-noto500 text-[26px] mt-[25px] mb-[30px] xs:hidden"
+        >
+          사업소개
+        </div>
+
+        <!-- break crumb -->
+        <div
+          class="pt-[15px] pb-[42px] xs:flex hidden justify-center items-center"
+        >
+          <div class="flex">
+            <div class="text-[15px] text-[#999999]">Home</div>
+            <div class="text-[15px] text-[#999999] px-[10px]">/</div>
+            <div class="text-[15px] text-[#848484] font-noto700">사업소개</div>
+          </div>
+        </div>
+
+        <!-- main content-->
+        <div class="relative">
+          <img
+            src="/assets/images/business_info/mask_group.png"
+            alt="bg"
+            class="absolute inset-0 z-[-1] w-full object-cover"
+          />
+
+          <div
+            class="border border-solid border-[#efefef] rounded-[30px] md:pt-[85px] md:pb-[74px] md:px-[110px] py-[41px] px-[8px]"
+          >
+            <div class="text-center max-w-[1000px]">
+              <img
+                src="/assets/images/business_info/icon_start.png"
+                alt="img"
+                class="inline-block align-top md:pr-[10px] md:h-auto h-[20px]"
+              />
+              <span
+                class="text-[#ABABAB] md:text-[46px] text-[24px] font-noto500 leading-none"
+              >
+                (주) 신한메탈은 금 , 은 , 팔라듐 등 귀금속을 B2B로 유통하는
+                기업입니다.
+              </span>
+              <img
+                src="/assets/images/business_info/icon_end.png"
+                alt="img"
+                class="inline-block md:h-auto h-[20px]"
+              />
+            </div>
+
+            <div
+              class="xs:flex hidden gap-[37px] md:pt-[66px] md:pb-[112px] pt-[48px] pb-[56px] lg:flex-row flex-col"
+            >
+              <img src="/assets/images/business_info/main.png" alt="main" />
+              <img src="/assets/images/business_info/main2.png" alt="main" />
+            </div>
+            <div class="xs:hidden flex gap-[37px] pt-[48px] pb-[56px] flex-col">
+              <img
+                src="/assets/images/business_info/main_mobile.png"
+                alt="main"
+              />
+              <img
+                src="/assets/images/business_info/main2_mobile.png"
+                alt="main"
+              />
+            </div>
+
+            <div>
+              <div
+                class="flex bg-[#FAFAFA] h-[45px] leading-[45px] text-[#999] font-noto500"
+              >
+                <div class="w-[33.33%] text-center">사업분야</div>
+                <div class="w-[33.33%] text-center">사업항목</div>
+                <div class="w-[33.33%] text-center">주요내용</div>
+              </div>
+              <div class="flex">
+                <div
+                  class="w-[33.33%] text-center border-[#EFEFEF] border border-solid flex justify-center items-center"
+                >
+                  <div class="md:text-[20px] text-[13px] font-noto500">
+                    국내 사업부문
+                  </div>
+                </div>
+                <div class="w-[66.66%]">
+                  <div class="flex">
+                    <div class="w-[50%]">
+                      <div
+                        class="md:text-[16px] text-[13px] font-noto500 text-center border-[#EFEFEF] border border-solid h-[70px] flex justify-center items-center"
+                      >
+                        귀금속 원자재 판매
+                      </div>
+                    </div>
+                    <div class="w-[50%]">
+                      <div
+                        class="md:text-[16px] text-[13px] font-noto500 text-center border-[#EFEFEF] border border-solid h-[70px] flex justify-center items-center px-[5px]"
+                      >
+                        Gold, Silver, Platinum, Palladium
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex">
+                    <div class="w-[50%]">
+                      <div
+                        class="md:text-[16px] text-[13px] font-noto500 text-center border-[#EFEFEF] border border-solid h-[70px] flex justify-center items-center"
+                      >
+                        도금 원자재 판매
+                      </div>
+                    </div>
+                    <div class="w-[50%]">
+                      <div
+                        class="md:text-[16px] text-[13px] font-noto500 text-center border-[#EFEFEF] border border-solid h-[70px] flex justify-center items-center px-[5px]"
+                      >
+                        청화금, 청화은, 은판, 은접점소재, Target
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex">
+                <div
+                  class="w-[33.33%] text-center border-[#EFEFEF] border border-solid flex justify-center items-center"
+                >
+                  <div class="md:text-[20px] text-[13px] font-noto500">
+                    해외 사업부문
+                  </div>
+                </div>
+                <div class="w-[66.66%]">
+                  <div class="flex h-full">
+                    <div class="w-[50%]">
+                      <div
+                        class="md:text-[16px] text-[13px] font-noto500 text-center border-[#EFEFEF] border border-solid h-[70px] flex justify-center items-center"
+                      >
+                        원자제 수출입 사업
+                      </div>
+                    </div>
+                    <div class="w-[50%]">
+                      <div
+                        class="md:text-[16px] text-[13px] font-noto500 text-center border-[#EFEFEF] border border-solid h-[70px] flex justify-center items-center"
+                      >
+                        Gold Bar, Gold Granule
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
