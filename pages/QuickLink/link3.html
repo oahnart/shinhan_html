@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BusinessInfo</title>
+
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            padding: {
+              xl: "16px",
+              DEFAULT: "16px",
+            },
+            screens: {
+              xl: "1403px",
+            },
+          },
+          extend: {
+            boxShadow: {
+              custom: "0px 15px 15px 0px rgba(0, 0, 0, 0.08)",
+            },
+          },
+          fontFamily: {
+            noto200: ["NotoSansKR-Thin"],
+            noto300: ["NotoSansKR-Light"],
+            noto400: ["NotoSansKR-Regular"],
+            noto500: ["NotoSansKR-Medium"],
+            noto700: ["NotoSansKR-Bold"],
+          },
+          screens: {
+            xxs: "360px",
+            xs: "475px",
+            sm: "640px",
+            md: "768px",
+            lg: "1024px",
+            xl: "1280px",
+            "2xl": "1400px",
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div>
+      <!-- banner -->
+      <div class="relative bg-[#ECECEC] h-[122px] xs:block hidden">
+        <img
+          src="/assets/images/template/subheader.png"
+          alt="img"
+          class="absolute inset-[-1]"
+        />
+        <div
+          class="flex justify-center items-center font-noto500 text-[38px] relative inset-0 h-full"
+        >
+          이메일 무단수집거부
+        </div>
+      </div>
+
+      <div class="container md:mb-[91px] mb-[57px]">
+        <div
+          class="text-center font-noto500 text-[26px] mt-[25px] mb-[33px] xs:hidden"
+        >
+          이메일 무단수집거부
+        </div>
+
+        <!-- break crumb -->
+        <div
+          class="pt-[15px] pb-[32px] xs:flex hidden justify-center items-center"
+        >
+          <div class="flex">
+            <div class="text-[15px] text-[#999999]">Home</div>
+            <div class="text-[15px] text-[#999999] px-[10px]">/</div>
+            <div class="text-[15px] text-[#848484] font-noto700">
+              이메일 무단수집거부
+            </div>
+          </div>
+        </div>
+        <!-- main content-->
+        <div
+          class="flex flex-col border border-solid border-[#efefef] rounded-[30px] shadow-[0_15px_20px_0px_#F4F4F4] px-[12px] md:pt-[24px] pt-[36px] md:pb-[87px] pb-[51px]"
+        >
+          <div
+            class="text-center font-noto500 text-[#000] md:text-[24px] text-[20px] md:mb-[34px] mb-[21px]"
+          >
+            이메일 무단수집거부
+          </div>
+          <div class="text-[#000] text-center pb-[48px]">
+            <div>
+              본 사이트에 게시된 이메일 주소가 전자우편 수집 프로그램이나 그
+              밖의 기술적 장치를 이용하여 무단으로 수집 되는 것을 거부합니다.
+            </div>
+            <div>
+              이를 위반시
+              <span class="text-[#FEA31B] font-noto700"
+                >「정보통신망 이용촉진 및 정보보호 등에 관한 법률」</span
+              >
+              에 의해 형사처벌됨을 유념하시기 바랍니다.
+            </div>
+          </div>
+          <div>
+            <img
+              src="/assets/images/QuickLink/link3.png"
+              alt="img"
+              class="mx-auto"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
