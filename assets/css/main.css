@@ -20,3 +20,45 @@ body {
   height: 100%;
   color: #101010;
 }
+.select-custom {
+  border-radius: 10px;
+  border: 1px solid #dcdbdb;
+}
+.select-custom select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='none' height='8' viewBox='0 0 15 8' width='15' xmlns='http://www.w3.org/2000/svg'><path d='M14.4434 0.919922L7.5 7.86328L0.556641 0.919922L1.20117 0.333984L7.5 6.60352L13.7988 0.333984L14.4434 0.919922Z' fill='%23101010'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 15px);
+  /* background-position-x: 100%; */
+  background-position-y: 15px;
+  /* margin-right: 15px; */
+  padding: 0px 15px;
+  min-width: 142px;
+  height: 40px;
+  line-height: 40px;
+  &:focus {
+    outline: none;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+/* WebKit-based browsers (Chrome, Safari, etc.) */
+.table-custom::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  height: 8px; /* Height of the scrollbar for horizontal scrolling */
+}
+
+.table-custom::-webkit-scrollbar-track {
+  background: #f4f4f4; /* Light background for the track */
+  border-radius: 15px; /* Rounded edges */
+}
+
+.table-custom::-webkit-scrollbar-thumb {
+  background-color: #fea31b; /* Orange color for the scroll thumb */
+  border-radius: 15px; /* Rounded edges for the thumb */
+}
