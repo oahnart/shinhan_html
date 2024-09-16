@@ -56,9 +56,13 @@
       >
         <div class="container flex justify-between">
           <div class="cursor-pointer">
-            <img src="/assets/images/home/shinhan_logo.png" alt="logo" />
+            <img
+              src="/assets/images/home/shinhan_logo.png"
+              alt="logo"
+              class="md:h-auto h-[50px]"
+            />
           </div>
-          <div class="flex items-center gap-[45px]">
+          <div class="md:flex hidden items-center gap-[45px]">
             <div class="relative group">
               <div
                 class="text-[#fff] cursor-pointer py-[9.5px] hover:border-b-[3px] hover:border-dotted hover:border-[#FEA31B]"
@@ -145,6 +149,225 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div
+            class="md:hidden flex items-center cursor-pointer"
+            onclick="openNav()"
+          >
+            <img src="/assets/images/template/hamburger.png" alt="img" />
+          </div>
+        </div>
+
+        <!-- drawer menu -->
+        <div
+          id="mySidenav"
+          class="flex flex-col overflow-hidden h-full w-0 bg-[#101010] fixed top-0 right-0 z-10"
+        >
+          <div
+            class="p-[15px] flex justify-between border-b border-solid border-[#303030]"
+          >
+            <div class="cursor-pointer">
+              <img
+                src="/assets/images/home/shinhan_logo.png"
+                alt="logo"
+                class="md:h-auto h-[50px]"
+              />
+            </div>
+            <div
+              class="cursor-pointer flex items-center cursor-pointer"
+              onclick="closeNav()"
+            >
+              <img src="/assets/images/template/x.png" alt="logo" />
+            </div>
+          </div>
+
+          <div
+            class="px-[44px] pt-[46px] pb-[109px] flex flex-col gap-[45px] flex-1"
+          >
+            <div class="flex flex-col gap-[10px]">
+              <div
+                class="py-[8.5px] flex justify-between items-center cursor-pointer"
+                onclick="window.location.href='/pages/Partner/index.html';"
+              >
+                <div class="text-[#FFFFFF] text-[18px]">협력업체</div>
+                <div>
+                  <img
+                    src="/assets/images/template/arrow-right.png"
+                    alt="img"
+                  />
+                </div>
+              </div>
+              <div
+                class="py-[8.5px] flex justify-between items-center cursor-pointer"
+                onclick="window.location.href='/pages/BusinessIntroduce/index.html';"
+              >
+                <div class="text-[#FFFFFF] text-[18px]">사업소개</div>
+                <div>
+                  <img
+                    src="/assets/images/template/arrow-right.png"
+                    alt="img"
+                  />
+                </div>
+              </div>
+              <div>
+                <div
+                  class="py-[8.5px] flex justify-between items-center cursor-pointer"
+                  onclick="openSubmenu('submenu1')"
+                >
+                  <div class="text-[#FFFFFF] text-[18px]">기업정보</div>
+                  <div>
+                    <img
+                      src="/assets/images/template/arrow-right.png"
+                      alt="img"
+                      id="icon-no-rotate"
+                    />
+                    <img
+                      src="/assets/images/template/arrow-right-rotate.png"
+                      alt="img"
+                      class="hidden"
+                      id="icon-rotate"
+                    />
+                  </div>
+                </div>
+
+                <div class="flex flex-col gap-[10px] hidden" id="submenu1">
+                  <div
+                    class="py-[9.5px] flex justify-between items-center cursor-pointer text-[#C0C0C0] px-[15px]"
+                    onclick="window.location.href='/pages/BusinessInfo/index.html';"
+                  >
+                    공지사항
+                  </div>
+                  <div
+                    class="py-[9.5px] flex justify-between items-center cursor-pointer text-[#C0C0C0] px-[15px]"
+                    onclick="window.location.href='/pages/BusinessLocation/index.html';"
+                  >
+                    사업장
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="py-[8.5px] flex justify-between items-center cursor-pointer"
+                  onclick="openSubmenu('submenu2')"
+                >
+                  <div class="text-[#FFFFFF] text-[18px]">지난시세조회</div>
+                  <div>
+                    <img
+                      src="/assets/images/template/arrow-right.png"
+                      alt="img"
+                      id="icon-no-rotate-2"
+                    />
+                    <img
+                      src="/assets/images/template/arrow-right-rotate.png"
+                      alt="img"
+                      class="hidden"
+                      id="icon-rotate-2"
+                    />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-[10px] hidden" id="submenu2">
+                  <div
+                    class="py-[9.5px] flex justify-between items-center cursor-pointer text-[#C0C0C0] px-[15px]"
+                    onclick="window.location.href='/pages/PriceHome/index.html';"
+                  >
+                    국내시세
+                  </div>
+                  <div
+                    class="py-[9.5px] flex justify-between items-center cursor-pointer text-[#C0C0C0] px-[15px]"
+                    onclick="window.location.href='/pages/PriceForeign/index.html';"
+                  >
+                    국제시세
+                  </div>
+                  <div
+                    class="py-[9.5px] flex justify-between items-center cursor-pointer text-[#C0C0C0] px-[15px]"
+                    onclick="window.location.href='/pages/PriceLondon/index.html';"
+                  >
+                    London Fix 시세
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="text-[#6C6C6C] text-[14px] pb-[11px]">Quick link</div>
+
+              <div class="flex flex-col gap-[10px] text-[18px]">
+                <div
+                  class="py-[8.5px] flex justify-between items-center cursor-pointer"
+                  onclick="window.location.href='/pages/QuickLink/link1.html';"
+                >
+                  <div class="text-[#FFFFFF] text-[18px]">이용약관</div>
+                  <div>
+                    <img
+                      src="/assets/images/template/arrow-right.png"
+                      alt="img"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="py-[8.5px] flex justify-between items-center cursor-pointer"
+                  onclick="window.location.href='/pages/QuickLink/link2.html';"
+                >
+                  <div class="text-[#FFFFFF] text-[18px]">개인정보처리방침</div>
+                  <div>
+                    <img
+                      src="/assets/images/template/arrow-right.png"
+                      alt="img"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="py-[8.5px] flex justify-between items-center cursor-pointer"
+                  onclick="window.location.href='/pages/QuickLink/link3.html';"
+                >
+                  <div class="text-[#FFFFFF] text-[18px]">
+                    이메일 무단수집거부
+                  </div>
+                  <div>
+                    <img
+                      src="/assets/images/template/arrow-right.png"
+                      alt="img"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="py-[8.5px] flex justify-between items-center cursor-pointer"
+                  onclick="window.location.href='/pages/QuickLink/link4.html';"
+                >
+                  <div class="text-[#FFFFFF] text-[18px]">
+                    책임의 한계와 t법적고지
+                  </div>
+                  <div>
+                    <img
+                      src="/assets/images/template/arrow-right.png"
+                      alt="img"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="px-[16px]">
+            <div
+              class="px-[20px] pb-[21px] border-b border-solid border-[#303030]"
+            >
+              <div class="flex justify-between text-[#FEA31B] text-[14px]">
+                <div>금은문의: 02.743.8771</div>
+                <div>대표전화: 02.743.8778</div>
+              </div>
+              <div
+                class="flex justify-between text-[#FEA31B] text-[14px] pt-[5px]"
+              >
+                <div>기타금속: 02.743.8755</div>
+              </div>
+            </div>
+            <div
+              class="px-[20px] pt-[22px] pb-[21px] flex justify-between items-center text-[#858585] text-[14px]"
+            >
+              <div>월~금요일</div>
+              <div>오전 9시~ 오후 5시</div>
+              <div>(동부 표준시)</div>
             </div>
           </div>
         </div>
@@ -2050,32 +2273,47 @@
       </div>
 
       <!-- footer -->
-      <div class="pt-[52px] relative min-h-[731px]">
+      <div class="md:pt-[52px] pt-[23px] relative min-h-[731px]">
         <div class="absolute inset-0 bg-[#FBFBFB] z-[-2]">
           <img
             src="assets/images/footer/bg-ft.png"
             alt="bg"
-            class="absolute top-[52px] right-0 bottom-0 z-[-1]"
+            class="absolute md:top-[52px] top-[23px] right-0 bottom-0 z-[-1] xs:block hidden"
+          />
+          <img
+            src="assets/images/footer/bg-mobile.png"
+            alt="bg"
+            class="absolute top-[23px] left-0 bottom-0 z-[-1] xs:hidden"
           />
         </div>
 
         <div class="container">
           <div
-            class="flex gap-[108px] pb-[71px] border-b border-[#E0E0E0] border-solid flex-col xl:flex-row"
+            class="flex md:gap-[108px] gap-[49px] md:pb-[71px] md:border-b border-[#E0E0E0] border-solid flex-col xl:flex-row"
           >
             <div class="xl:w-[701px]">
-              <div class="pb-[30px] border-b border-[#E0E0E0] border-solid">
-                <img src="assets/images/footer/shinhan_logo_ft.png" alt="img" />
+              <div
+                class="md:pb-[30px] pb-[22px] border-b border-[#E0E0E0] border-solid"
+              >
+                <img
+                  src="assets/images/footer/shinhan_logo_ft.png"
+                  alt="img"
+                  class="md:h-auto h-[50px]"
+                />
               </div>
 
-              <div class="flex gap-[156px] pt-[47px] flex-col lg:flex-row">
+              <div
+                class="flex gap-[156px] md:pt-[47px] pt-[36px] flex-col lg:flex-row"
+              >
                 <div>
                   <div
-                    class="uppercase text-[#212326] text-[25px] font-noto500 mb-[20px]"
+                    class="uppercase text-[#212326] md:text-[25px] text-[20px] font-noto500 md:mb-[20px] mb-[13px]"
                   >
                     Company
                   </div>
-                  <div class="flex flex-col leading-[35.2px]">
+                  <div
+                    class="flex flex-col md:leading-[35.2px] leading-[21px] md:text-[16px] text-[14px]"
+                  >
                     <div class="text-[#656565]">(주)신한메탈</div>
                     <div class="text-[#656565]">대표 : 정홍근</div>
                     <div class="text-[#656565]">
@@ -2098,7 +2336,7 @@
                   </div>
                 </div>
 
-                <div>
+                <div class="md:block hidden">
                   <div
                     class="uppercase text-[#212326] text-[25px] font-noto500 mb-[20px]"
                   >
@@ -2116,16 +2354,22 @@
               </div>
             </div>
 
-            <div class="flex-1 mt-[48px]">
+            <div class="flex-1 md:mt-[48px]">
               <div class="flex justify-between items-center mb-[23px]">
-                <div class="font-noto500 text-[25px]">오시는 길</div>
+                <div class="font-noto500 md:text-[25px] text-[20px]">
+                  오시는 길
+                </div>
                 <div>
-                  <img src="assets/images/footer/logo-fast.png" alt="logo" />
+                  <img
+                    src="assets/images/footer/logo-fast.png"
+                    alt="logo"
+                    class="md:h-auto h-[25px]"
+                  />
                 </div>
               </div>
 
               <div
-                class="border-[15px] border-[#fff] rounded-[10px] h-[413px] border-solid"
+                class="md:border-[15px] border-[10px] border-[#fff] rounded-[10px] md:h-[413px] h-[235px] border-solid"
               >
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.325979645809!2d126.98907461531178!3d37.57094097979708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2ddf8ef0467%3A0xf0de619dee519abb!2z7ISc7Jq47Yq567OE7IucIOyiheuhnOq1rCDrj4jtmZTrrLjroZw16rCA6ri4IDE!5e0!3m2!1sko!2skr!4v1646284283793!5m2!1sko!2skr"
@@ -2141,12 +2385,106 @@
           </div>
 
           <div
-            class="text-center pb-[24px] pt-[32px] text-[15px] text-[#797979]"
+            class="text-center md:pb-[24px] pb-[96px] md:pt-[32px] pt-[40px] md:text-[15px] text-[13px] text-[#797979]"
           >
             Copyright 2022 SHINHANMETAL Co., Ltd. All rights Reserved.
           </div>
         </div>
       </div>
+
+      <!-- fixed section -->
+      <div
+        class="fixed md:right-[80px] right-0 bottom-0 z-1 md:left-auto left-0"
+      >
+        <div
+          class="bg-[#101010] md:py-[18px] pt-[20px] pb-[14px] md:px-[32px] px-[16px] relative flex justify-between gap-[41px] rounded-t-[15px] leading-none"
+        >
+          <img
+            src="/assets/images/template/money.png"
+            alt="img"
+            class="absolute md:top-[25px] top-[-20px] md:left-[-25px] left-[10px]"
+          />
+          <div class="text-center">
+            <div
+              class="mb-[6px] text-[#999999] md:text-[14px] text-[11px] font-noto700"
+            >
+              국제 금시세$
+            </div>
+            <div class="text-[#fff] md:text-[19px] text-[14px] font-noto700">
+              2,473.50
+            </div>
+          </div>
+          <div class="text-center">
+            <div
+              class="mb-[6px] text-[#999999] md:text-[14px] text-[11px] font-noto700"
+            >
+              원달러 환율￦
+            </div>
+            <div class="text-[#fff] md:text-[19px] text-[14px] font-noto700">
+              2,473.50
+            </div>
+          </div>
+          <div class="text-center">
+            <div
+              class="mb-[6px] text-[#999999] md:text-[14px] text-[11px] font-noto700"
+            >
+              기준가(g)
+            </div>
+            <div class="text-[#fff] md:text-[19px] text-[14px] font-noto700">
+              2,473.50
+            </div>
+          </div>
+          <div class="text-center">
+            <div
+              class="mb-[6px] text-[#999999] md:text-[14px] text-[11px] font-noto700"
+            >
+              기준가(3.75g)
+            </div>
+            <div class="text-[#fff] md:text-[19px] text-[14px] font-noto700">
+              2,473.50
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+
+      function openSubmenu(id) {
+        // document.getElementById(id).style.height = "100%";
+        document.getElementById(id).style.display = "block";
+
+        if (id == "submenu1") {
+          document.getElementById("icon-no-rotate").style.display = "none";
+          document.getElementById("icon-rotate").style.display = "block";
+
+          document.getElementById("icon-no-rotate-2").style.display = "block";
+          document.getElementById("icon-rotate-2").style.display = "none";
+
+          document.getElementById("submenu2").style.display = "none";
+        }
+        if (id == "submenu2") {
+          document.getElementById("icon-no-rotate-2").style.display = "none";
+          document.getElementById("icon-rotate-2").style.display = "block";
+
+          document.getElementById("icon-no-rotate").style.display = "block";
+          document.getElementById("icon-rotate").style.display = "none";
+
+          document.getElementById("submenu1").style.display = "none";
+        }
+      }
+
+      // function closeSubmenu(id) {
+      //   // document.getElementById(id).style.height = "0";
+      //   document.getElementById(id).style.display = "hidden";
+      // }
+    </script>
   </body>
 </html>
