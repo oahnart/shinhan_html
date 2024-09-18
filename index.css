@@ -47,3 +47,28 @@
   overflow-x: hidden; */
   transition: 0.3s;
 }
+
+.column-table {
+  padding: 0 5%;
+  @media (max-width: 1024px) {
+    padding: 0 2%;
+  }
+  @media (max-width: 768px) {
+    padding: 0 5%;
+  }
+  @media (max-width: 525px) {
+    padding: 0 2%;
+  }
+}
+.column-table-2 {
+  padding: 0 10%;
+  @media (max-width: 1024px) {
+    padding: 0 7%;
+  }
+  @media (max-width: 768px) {
+    padding: 0 10%;
+  }
+  @media (max-width: 525px) {
+    padding: 0 7%;
+  }
+}
